@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@root/*": [
+                "./*"
+            ],
+            "@node_modules/*": [
+                "./node_modules/*"
+            ],
+            "@components/*": [
+                "./components/*"
+            ],
+            "@public/*": [
+                "./public/*"
+            ],
+            "@styles/*": [
+                "./components/styles/*"
+            ],
+            "@library/*": [
+                "./library/*"
+            ],
+            "@store/*": [
+                "./store/*"
+            ],
+        }
+    }
+}
