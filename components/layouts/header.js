@@ -21,7 +21,7 @@ export default function Header(props) {
                 <li className="nav-item dropdown d-none d-sm-block">
                     <div className="alert_nav alert alert-light alert-dismissible fade show" role="alert" >
                         <div className="d-flex">
-                            <span><img className="w-30 " src="/image/icon_2/credit.png"/></span>
+                            <span><img className="w-30 " src="/image/icon_3/text-message (1).png"/></span>
                             <div className="mx-3 hi-30">
                                 <strong className="nav_item_new">ปังคงเหลือ</strong>
                                 <small className="nav_item_new_price">1,282 ปัง</small> 

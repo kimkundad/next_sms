@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6, b, strong {
 }
 .btn-pum {
     font-weight: 700;
-    color: #ffffff;
+    color: #ffffff !important;
     background-color: #4bb7ff;
     border-color: #4bb7ff;
 }
@@ -433,6 +433,101 @@ a.active .nav-text {
     color: #4bb7ff;
     text-shadow: none;
 }
+.card_blue {
+    background: #e2f4fe!important;
+    border-radius: 15px!important;
+}
+.col-form-label {
+    font-weight: 700;
+    color: #000000;
+}
+.form-group {
+    margin-bottom: 0rem;
+}
+.set_ra_15{
+    border-radius: 15px!important;
+}
+.css-1s2u09g-control{
+    border-radius: 25px!important;
+}
+.btn-sender-fix{
+    min-width: 180px;
+}
+.top_15{
+    margin-top: 15px;
+}
+.strong_new_price{
+    font-size: 24px;
+    font-weight: 700;
+    display: block;
+    margin-top: -10px;
+}
+.phone_item_new{
+    font-size: 20px;
+    font-weight: 700;
+}
+.w-50{
+    width: 50px!important;
+}
+.auto_height{
+    
+}
+.table-striped > tbody > tr:nth-child(odd) {
+    background-color: rgb(255 255 255);
+    background-clip: padding-box;
+}
+thead {
+    background: #b9e2ff!important;
+    border-radius: 15px!important;
+}
+
+.table-striped > tbody > tr:nth-child(odd) {
+    background-color: rgb(255 255 255);
+    background-clip: padding-box;
+}
+table thead {
+    -moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+}
+
+table  th:nth-child(1){
+    border-radius: 15px 0px 0px 15px;
+}
+table  th:nth-last-child(1){
+    border-radius: 0px 15px 15px 0px;
+}
+.hi15{
+    height: 15px;
+}
+.table th, .table td {
+    padding: 8px 10px;
+}
+.table{
+    font-size: 16px;
+}
+.btn-rad{
+    border-top-left-radius: 15px!important;
+    border-bottom-left-radius: 15px!important;
+}
+.btn-rad-in{
+    border-top-right-radius: 15px!important;
+    border-bottom-right-radius: 15px!important;
+}
+tbody::before
+{
+  content: '';
+  display: block;
+  height: 15px;
+
+}
+@media (min-width: 992px){
+    .page-container {
+        max-width: 1240px;
+        margin: 0 auto;
+    }
+}
+
 /* background: #ffd855; */
 @media screen and (max-width: 775px) {
     .tb_btn {

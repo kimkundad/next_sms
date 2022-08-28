@@ -2,11 +2,13 @@ import React, { Fragment } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Layouts from "@components/layouts/index";
-import styles from "../../styles/Home.module.css";
-import Flickity1 from "@components/flickity";
-import Btn_sms from "@components/btm_sms";
+import Card from "@components/card";
+import CardBlue from "@components/cardBlue";
+import SelectOp from "@components/selectOp";
+import Btn_sender from "@components/btn_sender";
+import Btn_H_sms from "@components/btn_header_sms";
 
-export default function Home() {
+export default function Sms_sender() {
   return (
     <Fragment>
       <Head>
@@ -19,13 +21,63 @@ export default function Home() {
           <div className="padding text-center"></div>
         </div>
         <div className="page-content page-container">
-          <div className="d-flex">
-            <Btn_sms btn_text="ภาพรวม" btn_url_path="/sms_service" btn_url="/sms_dashboard" />
-            <Btn_sms btn_text="ส่งข้อความ" btn_url_path="/sms_service" btn_url="/sms_sender" />
-            <Btn_sms btn_text="รายงาน" btn_url="sms_report" />
-            <Btn_sms btn_text="จัดการรายชื่อ" btn_url="sms_customer" />
-            <Btn_sms btn_text="เทมเพลตข้อความ" btn_url="sms_template" />
-          </div>
+          <Btn_H_sms></Btn_H_sms>
+          <br />
+          <Card>
+            <CardBlue>
+              <div className="row">
+                <div className="col-md-4 ">
+                  <SelectOp title="ชื่อแคมเปญ" />
+                </div>
+                <div className="col-md-4 ">
+                  <SelectOp title="ชื่อผู้ส่ง" />
+                </div>
+                <div className="col-md-4 ">
+                  <SelectOp title="รูปแบบการส่ง" />
+                </div>
+              </div>
+            </CardBlue>
+            <CardBlue>
+              <div className="row">
+                <div className="col-md-4 text-center">
+                  <strong>เบอร์โทรศัพท์ที่ต้องการส่ง</strong>
+                  <Btn_sender btn_text="ระบุเอง" type="fix" />
+                  <Btn_sender btn_text="เลือกจากแฟ้มรายชื่อ" type="book" />
+                  <Btn_sender btn_text="เลือกจากไฟล์" type="file" />
+                  <br />
+                  <button class="btn btn-sender-fix btn_radius mb-1 btn-md btn-white">
+                    <div className="d-flex">
+                      <span>
+                        <img
+                          className="w-50 "
+                          src="/image/icon_3/text-message (1).png"
+                        />
+                      </span>
+                      <div className="mx-3 ">
+                        <strong className="phone_item_new">
+                          จำนวนเบอร์โทรศัพท์
+                        </strong>
+                        <small className="strong_new_price">000000</small>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+                <div className="col-md-8 ">
+                  <div class="form-group">
+                    <textarea
+                      class="form-control auto_height btn_radius"
+                      rows="9"
+                      data-minwords="6"
+                      required=""
+                      placeholder="กรอกเบอร์โทรศัพท์ บรรทัดละ 1 เบอร์ ตัวอย่าง 0877777777"
+                    ></textarea>
+                  </div>
+                  <br/>
+                    <a className="btn_radius pull-right btn btn-sm btn-pum">ถัดไป </a>
+                </div>
+              </div>
+            </CardBlue>
+          </Card>
         </div>
       </Layouts>
     </Fragment>
