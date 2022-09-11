@@ -62,7 +62,7 @@ export default function Header(props) {
                 </li>
                 
                 <li className="nav-item d-lg-none">
-                    <Link href="/">
+                    <Link href="#">
                     <a onClick={handleOpen}  className="nav-link px-1 font-w" data-toggle="modal" data-target="#aside">
                         <i className="fa fa-bars" aria-hidden="true"></i>
                     </a>

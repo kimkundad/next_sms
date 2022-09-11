@@ -8,8 +8,8 @@ import CardBlue from "@components/cardBlue";
 import SelectOp from "@components/selectOp";
 import Btn_sender from "@components/btn_sender";
 import Link from "next/link";
-import Table from "@components/Table";
-import countriesData from "@components/data/sms_report";
+import Table from "@components/Table_customer";
+import countriesData from "@components/data/sms_customer";
 
 
 export default function Sms_report() {

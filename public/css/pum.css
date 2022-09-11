@@ -17,11 +17,11 @@
     background: inherit;
 }
 body, body {
-    font-family: 'DB Adman X', sans-serif;
+    font-family: 'DB Adman X', sans-serif!important;
     font-size: 18px;
 }
 h1, h2, h3, h4, h5, h6, b, strong {
-    font-family: 'DB Adman X Bd', sans-serif;
+    font-family: 'DB Adman X Bd', sans-serif!important;
 
 }
 .f-22{
@@ -521,6 +521,61 @@ tbody::before
   height: 15px;
 
 }
+.Dropdown-control {
+    border-radius: 50px!important;
+    padding: 5px 42px 5px 20px!important;
+ }
+.table_bot_text_p{
+    font-size: 12px;
+}
+.btn-white {
+    border-color: #0000002b!important;
+}
+.w-200{
+    text-align: center;
+    width: 200px;
+}
+.none_bor_l{
+    border-left:1px solid #00000000
+}
+.none_bor_r{
+    margin-right: -5px;
+    border-right:1px solid #00000000 !important;
+}
+.card, .block {
+    background: #fff;
+    border-width: 0;
+    border-radius: 0.25rem;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 19%);
+    margin-bottom: 1.5rem;
+}
+.submit_btn_mo:hover{
+    background: #3f9ddb!important;
+}
+.in_br{
+    border-radius: 40px!important;
+}
+.mr5{
+    margin-right: 5px;
+}
+.dropzone {
+    text-align: center;
+    padding: 20px;
+    border: 3px dashed #eeeeee;
+    background-color: #fafafa;
+    color: #bdbdbd;
+  
+    margin-bottom: 20px;
+  }
+  .chakra-modal__close-btn{
+    color: #fff;
+    background: #ff0000!important;
+    border-radius: 50px!important;
+  }
+  .style_con{
+    background: #fff!important;
+    border-top-left-radius: 100px;
+  }
 @media (min-width: 992px){
     .page-container {
         max-width: 1240px;
