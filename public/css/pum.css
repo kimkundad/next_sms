@@ -437,6 +437,10 @@ a.active .nav-text {
     background: #e2f4fe!important;
     border-radius: 15px!important;
 }
+.card_blue2{
+    background: #4bb7ff!important;
+    border-radius: 15px!important;
+}
 .col-form-label {
     font-weight: 700;
     color: #000000;
@@ -554,9 +558,13 @@ tbody::before
 }
 .in_br{
     border-radius: 40px!important;
+    background: #fff!important;
 }
 .mr5{
     margin-right: 5px;
+}
+.btn_icon_sig{
+    padding: 0px!important;
 }
 .dropzone {
     text-align: center;
@@ -576,11 +584,16 @@ tbody::before
     background: #fff!important;
     border-top-left-radius: 100px;
   }
+  .p-0{
+    padding: 0px !important;
+  }
+  
 @media (min-width: 992px){
     .page-container {
         max-width: 1240px;
         margin: 0 auto;
     }
+    
 }
 
 /* background: #ffd855; */
