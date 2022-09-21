@@ -441,6 +441,11 @@ a.active .nav-text {
     background: #4bb7ff!important;
     border-radius: 15px!important;
 }
+.card_blue3{
+    background: #b9e2ff!important;
+    border-radius: 15px!important;
+    margin-bottom: 0px!important;
+}
 .col-form-label {
     font-weight: 700;
     color: #000000;
@@ -530,7 +535,7 @@ tbody::before
     padding: 5px 42px 5px 20px!important;
  }
 .table_bot_text_p{
-    font-size: 12px;
+    font-size: 14px;
 }
 .btn-white {
     border-color: #0000002b!important;
@@ -586,6 +591,9 @@ tbody::before
   }
   .p-0{
     padding: 0px !important;
+  }
+  .pull-left{
+    margin-right: 5px!important;
   }
   
 @media (min-width: 992px){

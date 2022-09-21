@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-
+import {
+    Box 
+  } from "@chakra-ui/react";
 import useTable from "@components/hooks/useTable";
 import TableFooter from "@components/Table/TableFooter";
 import Dropdown from "react-dropdown";
@@ -7,6 +9,7 @@ import image_2 from "@public/image/icon_3/calendar.png";
 import "react-dropdown/style.css";
 import CardBlue from "@components/cardBlue";
 import Btn_icon from "@components/Btn_icon";
+import CardBlue_h_otp from "@components/CardBlue_h_otp";
 
 const Table = ({ data, rowsPerPage }) => {
   const [page, setPage] = useState(1);
@@ -41,7 +44,26 @@ const Table = ({ data, rowsPerPage }) => {
   return (
     <>
       <div className="page-title">
+      <CardBlue>
         <div className="row">
+          <div className=" col-md-5">
+            <CardBlue_h_otp 
+            nameApp="ชื่อแอฟ"
+            detail="OPT สมัครใช้งานบรอดแคส์ต"
+            />
+          </div>
+          <div className=" col-md-7">
+          <CardBlue_h_otp 
+            nameApp="ตัวอย่างข้อความ"
+            detail="ข้อความก่อนส่งรหัส {xxxx} ข้อความหลังรหัส จะหมดอายุใน 5 นาที (Ref:xxxxx)"
+            />
+          </div>
+        </div>
+      </CardBlue>
+      </div>
+
+      <CardBlue>
+      <div className="row">
           <div className=" col-md-6">
           <div className="input-group">
               <span className="set_border none_bor_r input-group-append">
@@ -83,19 +105,14 @@ const Table = ({ data, rowsPerPage }) => {
             </div>
           </div>
         </div>
-      </div>
-
-      <CardBlue>
         <div class="table-responsive">
           <table className="table table-striped">
             <thead>
               <tr>
                 <th>วันที่ส่ง</th>
+                <th>หมดอายุ</th>
                 <th>เบอร์ผู้รับ</th>
-                <th>ชื่อแคมเปญ</th>
-                <th>ข้อความ</th>
-                <th>ชื่อผู้ส่ง</th>
-                <th>เครดิตที่ใช้</th>
+                <th>PIN</th>
                 <th>สถานะ</th>
               </tr>
             </thead>
@@ -103,11 +120,9 @@ const Table = ({ data, rowsPerPage }) => {
               {slice?.map((el, indexl) => (
                 <tr>
                   <td>{el.date}</td>
+                  <td>{el.enddate}</td>
                   <td>{el.phone}</td>
-                  <td>{el.campaign}</td>
-                  <td>{el.sms}</td>
-                  <td>{el.owner}</td>
-                  <td>{el.credit}</td>
+                  <td>{el.pin}</td>
                   <td>
                     {el.status == "pending" ? (
                       <Btn_icon 
@@ -136,18 +151,20 @@ const Table = ({ data, rowsPerPage }) => {
         </div>
       </CardBlue>
       <div className="d-flex justify-content-between">
-        <p className="table_bot_text_p">
+        <Box >
+        <p className="table_bot_text_p ">
           <img className="pull-left w-20 mar-ri-10" src="/image/icon_2/check copy.png" />
           ส่งสำเร็จ - ส่งข้อความไปถึงผู้รับเรียบร้อย
         </p>
-        <p className="table_bot_text_p">
+        <p className="table_bot_text_p  mt-1">
           <img className="pull-left w-20 mar-ri-10" src="/image/icon_2/cancel copy.png" />
           ส่งไม่สำเร็จ - ไม่สามารถส่งข้อความไปถึงผู้รับได้ ( เครือข่ายหรือ ระบบ TBS ขัดข้อง,ผู้ส่งอยุ่ใน Blacklist )
         </p>
-        <p className="table_bot_text_p">
+        <p className="table_bot_text_p  mt-1">
           <img className="pull-left w-20 mar-ri-10" src="/image/icon_2/loading.png" />
           รอดำเนินการ - ระบบกำลังส่งข้อความไปยังผู้รับ
         </p>
+        </Box>
         <div className="pull-right">
           <TableFooter
             range={range}

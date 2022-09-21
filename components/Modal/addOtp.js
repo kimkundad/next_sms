@@ -40,7 +40,7 @@ export default function addOtp(props) {
       </a>
       <Modal
         isOpen={isOpen}
-        size={"xl"}
+        size={"xxl"}
         onClose={onClose}
         className="modal-w-otp"
       >
@@ -60,7 +60,7 @@ export default function addOtp(props) {
               />
             </FormControl>
             <div className="row">
-              <div className="col-md-6 p-0">
+              <div className="col-md-6 ">
                 <FormControl mt={3}>
                   <FormLabel fontSize="xl">ข้อความก่อนเข้ารหัส</FormLabel>
                   <Input
@@ -115,6 +115,7 @@ export default function addOtp(props) {
               <div className="col-md-6 ">
               <Text fontSize='xl' className="text-center" mt={5}> ตัวอย่างข้อความ</Text>
               <img
+                      width="100%"
                       className="flu-id"
                       src="/image/icon_3/preview.png"
                     />

@@ -45,7 +45,7 @@ export default function editOtp(props) {
       
       <Modal
         isOpen={isOpen}
-        size={"xl"}
+        size={"xxl"}
         onClose={onClose}
         className="modal-w-otp"
       >
@@ -58,7 +58,7 @@ export default function editOtp(props) {
           <ModalBody background="#d9efff">
             <CardBlue2 mt={5}>
             <Flex>
-            <Box>
+            <Box width="50%">
             <FormLabel color='#fff' fontSize="xl">App Key</FormLabel>
             <InputGroup size='md'>
                 <Input
@@ -73,7 +73,7 @@ export default function editOtp(props) {
                 </InputRightElement>
                 </InputGroup>
                 </Box>
-                <Box>
+                <Box width="50%">
                 <FormLabel color='#fff' fontSize="xl">App Secret</FormLabel>
             <InputGroup size='md'>
                 <Input
@@ -153,7 +153,7 @@ export default function editOtp(props) {
               </div>
               <div className="col-md-6 ">
               <Text fontSize='xl' className="text-center" mt={5}> ตัวอย่างข้อความ</Text>
-              <img
+              <img  width="100%"
                       className="flu-id"
                       src="/image/icon_3/preview.png"
                     />

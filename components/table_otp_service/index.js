@@ -21,6 +21,7 @@ import Btn_icon from '@components/Btn_icon';
 import Dropzone from "react-dropzone";
 import AddOtp from '@components/Modal/addOtp';
 import EditOtp from '@components/Modal/editOtp';
+import DetailOtp from '@components/Modal/detailOtp';
 
 const Table = ({ data, rowsPerPage }) => {
   const [page, setPage] = useState(1);
@@ -101,10 +102,7 @@ const Table = ({ data, rowsPerPage }) => {
                     )}
                   </td>
                   <td className="pull-right">
-                    <Btn_icon_sigle
-                      icon="/image/icon_3/report.png"
-                      url="#"
-                    />
+                    <DetailOtp/>
                     <EditOtp/>
                     {el.status == "success" ? (
                     <Btn_icon_sigle
