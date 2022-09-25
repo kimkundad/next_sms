@@ -38,7 +38,7 @@ const dashboardRoutes = [
     layout: "/otp_service",
   },
   {
-    path: "/",
+    path: "/payment_sms",
     name: "เติมเครดิต",
     icon: '/credit.png',
     layout: "/payment",
@@ -47,7 +47,7 @@ const dashboardRoutes = [
     path: "/",
     name: "ชื่อผู้ส่ง",
     icon: 'group.png',
-    layout: "/payment",
+    layout: "/contact",
   },
   
 ];

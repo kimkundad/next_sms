@@ -595,6 +595,57 @@ tbody::before
   .pull-left{
     margin-right: 5px!important;
   }
+  .large_btn{
+    font-size: 24px!important;
+  }
+  .fint-26{
+    font-size: 26px !important;
+  }
+  .blue_active{
+    background: #b8e3ff!important;
+  }
+  hr {
+    border-color: #b8e3ff!important;
+    border-top-width: 2px!important;
+}
+.bath_sx{
+    font-size: 18px;
+    padding-left: 5px;
+}
+.items{
+    position: relative;
+}
+.items .ribbon_3 {
+    right: 0px;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    width: 75px;
+    height: 75px;
+    text-align: right;
+}
+.ribbon_3.popular span {
+    background: linear-gradient(#f14f3f 0%,#cb4335 100%)!important;
+}
+.ribbon_3 span {
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 25px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(48deg);
+    width: 100px;
+    display: block;
+    background: #79A70A;
+    background: linear-gradient(#9BC90D 0%,#79A70A 100%);
+    box-shadow: 0 3px 10px -5px rgb(0 0 0);
+    text-shadow: 1px 1px 2px rgb(0 0 0 / 25%);
+    position: absolute;
+    top: 19px;
+    right: -21px;
+}
   
 @media (min-width: 992px){
     .page-container {
