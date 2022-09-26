@@ -35,7 +35,7 @@ export default function Box_price(props) {
                 {props.title}
               </Center>
               <Center height="40px" color="#fff" fontSize="5xl">
-                {props.price} <span className="bath_sx">บาท</span>
+                {props.price} <span className="bath_sx"> บาท</span>
               </Center>
             </Box>
           ) : (
@@ -51,7 +51,7 @@ export default function Box_price(props) {
                 {props.title}
               </Center>
               <Center height="40px" color="#000" fontSize="5xl">
-                {props.price} <span className="bath_sx">บาท</span>
+                {props.price} <span className="bath_sx"> บาท</span>
               </Center>
             </Box>
           )}
@@ -103,9 +103,11 @@ export default function Box_price(props) {
             </Box>
             <Box pt="3">
               <Center>
+                <Link href="/payment/package">
                 <a className="btn_radius pull-right btn btn-sm btn-pum">
                   เลือกแพ็คเกจ{" "}
                 </a>
+                </Link>
               </Center>
             </Box>
           </Box>
