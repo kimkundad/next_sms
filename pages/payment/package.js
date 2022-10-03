@@ -70,7 +70,7 @@ export default function Package() {
           <Card>
             <Flex>
               <Box>
-                <Btn_link />
+                <Btn_link title="กลับหน้าแพ็คเกจจ" url="/payment/payment_sms"/>
               </Box>
               <Spacer />
               <Box>
@@ -128,7 +128,7 @@ export default function Package() {
                             <input
                               type="text"
                               className="form-control in_br"
-                              placeholder="ระบุชื่อ-นามสกุล"
+                              placeholder="ระบุเบอร์โทรศัพท์"
                             />
                           </div>
                           <div className="form-group col-md-6">
@@ -138,7 +138,7 @@ export default function Package() {
                             <input
                               type="text"
                               className="form-control in_br"
-                              placeholder="ระบุเลขบัตรประชาชน"
+                              placeholder="ระบุอีเมล"
                             />
                           </div>
                         </div>
@@ -183,16 +183,16 @@ export default function Package() {
                         <div className="form-row text-left">
                           <div className="form-group col-md-6">
                             <label>
-                              เลขประจจำตัวผู้เสียภาษี
+                              เลขประจำตัวผู้เสียภาษี
                               <span className="text-danger">*</span>
                             </label>
-                            <input type="text" className="form-control in_br" />
+                            <input type="text" className="form-control in_br" placeholder="ระบุเลขประจำตัวผู้เสียภาษี" />
                           </div>
                           <div className="form-group col-md-6">
                             <label>
                               สาขา <span className="text-danger">*</span>
                             </label>
-                            <input type="text" className="form-control in_br" />
+                            <input type="text" className="form-control in_br" placeholder="ระบุสาขา" />
                           </div>
                         </div>
                         <Box h="3"></Box>
@@ -205,7 +205,7 @@ export default function Package() {
                             <input
                               type="text"
                               className="form-control in_br"
-                              placeholder="ระบุชื่อ-นามสกุล"
+                              placeholder="ระบุเบอร์โทรศัพท์"
                             />
                           </div>
                           <div className="form-group col-md-6">
@@ -215,7 +215,7 @@ export default function Package() {
                             <input
                               type="text"
                               className="form-control in_br"
-                              placeholder="ระบุเลขบัตรประชาชน"
+                              placeholder="ระบุอีเมล"
                             />
                           </div>
                         </div>
@@ -296,7 +296,7 @@ export default function Package() {
               </Box>
 
               <Box className="col-md-12">
-              <Link href="/payment/payment_sms">
+              <Link href="/payment/choose_payment">
                   <a className="btn_radius pull-right btn btn-sm btn-pum font-22">
                      ถัดไป <i className="fa fa-angle-right faicon-next"></i>
                   </a>

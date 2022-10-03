@@ -5,9 +5,9 @@ export default function Btn_link(props) {
       
   return (
     <>
-      <Link href="/payment/payment_sms">
+      <Link href={props.url}>
                   <a className="btn_radius pull-right btn btn-sm btn-pum">
-                    <i className="fa fa-angle-left faicon"></i> กลับหน้าแพ็คเกจจ
+                    <i className="fa fa-angle-left faicon"></i> {props.title}
                   </a>
                 </Link>
     </>

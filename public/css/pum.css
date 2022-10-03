@@ -20,7 +20,7 @@ body, body {
     font-family: 'DB Adman X', sans-serif!important;
     font-size: 18px;
 }
-h1, h2, h3, h4, h5, h6, b, strong {
+h1, h2, h3, h4, h5, h6, b, strong, p {
     font-family: 'DB Adman X Bd', sans-serif!important;
 
 }
@@ -170,17 +170,30 @@ b, strong {
 .mar-ri-10{
     margin-right: 10px;
 }
+.hr-grey{
+    border-color: #b0aeae!important;
+    border-top-width: 1px!important;
+}
 .card_pung {
     border-radius: 15px!important;
 }
 .btn_radius{
     border-radius: 15px!important;
 }
+.borber_radius_20{
+    border-radius: 20px!important;
+}
 .font-label {
     font-size: 16px;
 }
+.h-35{
+    height: 35px;
+}
 .font-w {
     color: #fff!important;
+}
+td{
+    font-size: 16px!important;
 }
 .form-rad{
     border-radius: 15px;
@@ -200,6 +213,9 @@ b, strong {
 }
 .f-18{
     font-size: 18px!important;
+}
+.no_border{
+    border-bottom: none !important;
 }
 .alert {
 
@@ -613,7 +629,7 @@ tbody::before
   }
   hr {
     border-color: #b8e3ff!important;
-    border-top-width: 2px!important;
+    border-top-width: 1px!important;
 }
 .bath_sx{
     font-size: 18px;
