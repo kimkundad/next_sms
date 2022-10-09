@@ -91,7 +91,7 @@ export default function Aside(props) {
 
         return (
           <li>
-            <Link href={prop.path}>
+            <Link href={prop.layout + prop.path}>
               <a className={listItemClasses}>
                 <span className="nav-icon text-primary">
                 <img className="w-30 " src={'/image/icon_3/'+prop.icon}/>

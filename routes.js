@@ -47,7 +47,7 @@ const dashboardRoutes = [
     path: "/",
     name: "ชื่อผู้ส่ง",
     icon: 'group.png',
-    layout: "/contact",
+    layout: "/sender",
   },
   
 ];

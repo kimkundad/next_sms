@@ -29,7 +29,7 @@ const dashboardRoutes2 = [
         path: "/",
         name: "ติดต่อแอดมิน",
         icon: 'chat.png',
-        layout: "/contact",
+        layout: "/contact_us",
       },
       {
         path: "/",

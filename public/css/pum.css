@@ -41,6 +41,19 @@ h1, h2, h3, h4, h5, h6, b, strong, p {
     background-color: #4bb7ff;
     border-color: #4bb7ff;
 }
+.label{
+    color: #000!important;
+}
+.bot_radio{
+    border-color: #666!important;
+    background-color: #fff;
+}
+.chakra-radio__label{
+    font-size: 18px!important;
+}
+.term_ml{
+    margin-left: 10px !important;
+}
 .btn-pum:hover {
     font-weight: 700;
     color: #ffffff;
