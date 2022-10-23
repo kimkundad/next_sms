@@ -12,7 +12,7 @@ export default function Header(props) {
     
     return <div id="header" className="page-header bg_yello ">
         <div className="navbar navbar-expand-lg">
-            <Link href="/">
+            <Link href="/dashboard">
             <a className="navbar-brand d-lg-none">
                 <img src="/image/Logo_Pumppang.png" className="img-fluid" />
             </a>
@@ -50,12 +50,12 @@ export default function Header(props) {
                     </a>
                     </Link>
                     <div className="dropdown-menu dropdown-menu-right w mt-3 animate fadeIn">
-                        <Link href="/">
+                        <Link href="/setting">
                         <a className="dropdown-item" href="setting.html">
                             <span>ตั้งค่าโปรไฟล์</span>
                         </a>
                         </Link>
-                        <Link href="/">
+                        <Link href="/logout">
                         <a className="dropdown-item" href="login.html">ออกจากระบบ</a>
                         </Link>
                     </div>

@@ -7,7 +7,7 @@ export default function Blog(props) {
     <>
       <div className="row">
         <div className="col-md-12">
-            <Link href="/">
+            <Link href="/blogs">
                 <a className="btn_radius btn btn-sm btn-pum pull-right">ดูทั้งหมด</a>
           </Link>
         </div>

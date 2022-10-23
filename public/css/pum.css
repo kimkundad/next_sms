@@ -67,6 +67,31 @@ h1, h2, h3, h4, h5, h6, b, strong, p {
     background-color: #4bb7ff;
     box-shadow: none;
 }
+.btn-pum-edit{
+    background-color: #b8e3ff;
+    border-color: #4bb7ff;
+    color: #000;
+    font-size: 22px !important;
+    padding: 2px 15px!important;
+    border-radius: 50px!important;
+    margin-top: 15px;
+}
+.btn-pum-edit2{
+    background-color: #4bb7ff;
+    border-color: #4bb7ff;
+    color: #fff;
+    font-size: 22px !important;
+    padding: 2px 15px!important;
+    border-radius: 50px!important;
+}
+.btn-pum-edit2:hover{
+    background-color: #4bb7ff;
+    border-color: #4bb7ff;
+    color: #fff;
+    font-size: 22px !important;
+    padding: 2px 15px!important;
+    border-radius: 50px!important;
+}
 .table > thead > tr > th{
     font-size: 16px;
 }
@@ -597,6 +622,13 @@ tbody::before
 .submit_btn_mo:hover{
     background: #3f9ddb!important;
 }
+.submit_btn_small{
+    padding: 1px 20px !important;
+    height: 30px!important;
+}
+.submit_btn_small:hover{
+    background: #3f9ddb!important;
+}
 .in_br{
     border-radius: 40px!important;
     background: #fff!important;
@@ -707,6 +739,9 @@ tbody::before
   .chakra-checkbox__control{
     background: #fff;
     border: 1px solid #666 !important;
+  }
+  .p-b-25{
+    padding-bottom: 35px!important;
   }
 @media (min-width: 992px){
     .page-container {

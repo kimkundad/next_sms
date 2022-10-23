@@ -3,6 +3,9 @@ import { useEffect } from 'react';
 import Flickity from 'react-flickity-component'
 import Item_flickity from '@components/item_flickity/index';
 import '@node_modules/flickity/css/flickity.css'
+import {
+  Box
+} from "@chakra-ui/react";
 
 export default function Flickity1( props ) {
 
@@ -14,8 +17,8 @@ export default function Flickity1( props ) {
 
     return (
       <div className='card card_pung'>
-        <div className='card-body'>
-        <Flickity
+        <div className='card-body p-b-25'>
+        <Flickity 
         classNameName={'carousel'} // default ''
         elementType={'div'} // default 'div'
         options={flickityOptions} // takes flickity options {}
