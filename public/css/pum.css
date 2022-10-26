@@ -249,11 +249,24 @@ td{
     background-color: #ffd855 !important;
     border-color: #ffb200 !important;
 }
+.get_coloe_2 > tbody > tr:nth-child(odd) {
+    background: #e2f4fe!important;
+    background-clip: padding-box;
+}
 .f-18{
     font-size: 18px!important;
 }
+.btn_cancle{
+    font-size: 16px!important;
+    color: white !important;
+    background-color: #4bb7ff !important;
+    border-color: #4bb7ff !important;
+}
 .no_border{
     border-bottom: none !important;
+}
+.mb_0{
+    margin-bottom: 0rem!important;
 }
 .alert {
 
@@ -743,6 +756,9 @@ tbody::before
   .p-b-25{
     padding-bottom: 35px!important;
   }
+  .circle {
+    border-radius: 500px!important;
+}
 @media (min-width: 992px){
     .page-container {
         max-width: 1240px;

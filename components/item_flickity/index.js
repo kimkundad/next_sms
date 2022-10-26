@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Blog_detail from '@components/Modal/blog_detail';
 
 export default function Item_flickity( props) {
     return (
@@ -12,9 +13,7 @@ export default function Item_flickity( props) {
           <p className="card-text">{ props.detail }</p>
           <div className="text-center">
             <br/>
-            <Link href={ props.get_href } >
-            <a className="btn_radius btn btn-sm btn-pum "><b>ดูรายละเอียด</b> </a>
-            </Link>
+            <Blog_detail id_blog={props.id_blog}/>
           </div>
         </div>
       </div>

@@ -40,6 +40,7 @@ export default function Aside(props) {
     console.log("xxx--->", isClass);
   };
 
+
   var links = (
     <ul className="nav bg">
       <br />
@@ -47,7 +48,7 @@ export default function Aside(props) {
                   <Link href="/">
                     <a href="#" className="">
                       <span className="nav-icon text-primary">
-                        <img className="w-30 " src="image/icon_2/credit.png" />
+                        <img className="w-30 " src="/image/icon_3/text-message (1).png" />
                       </span>
                       <span className="nav-text">
                         ปังคงเหลือ <b>1,282</b> ปัง

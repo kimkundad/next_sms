@@ -4,9 +4,9 @@ import Image from "next/image";
 import Layouts from "@components/layouts/index";
 import Card from "@components/card";
 import CardBlue from "@components/cardBlue";
-import SelectOp from "@components/selectOp";
-import Btn_sender from "@components/btn_sender";
 import Btn_H_sms from "@components/btn_header_sms";
+import FileContact from '@components/Modal/FileContact';
+
 
 export default function Sms_sender() {
   return (
@@ -27,13 +27,38 @@ export default function Sms_sender() {
             <CardBlue>
               <div className="row">
                 <div className="col-md-4 ">
-                  <SelectOp title="ชื่อแคมเปญ" />
+                  <div class="form-group row">
+                    <label class="col-sm-4 col-form-label">ชื่อเเคมเปญ</label>
+                    <div class="col-sm-8">
+                      <select class="form-control circle">
+                        <option> 03 Jun 2022 [13:21:20]</option>
+                        <option> 03 Jun 2022 [13:21:20]</option>
+                      </select>
+                    </div>
+                  </div>
                 </div>
                 <div className="col-md-4 ">
-                  <SelectOp title="ชื่อผู้ส่ง" />
+                  <div class="form-group row">
+                    <label class="col-sm-4 col-form-label">ชื่อผู้ส่ง</label>
+                    <div class="col-sm-8">
+                      <select class="form-control circle">
+                        <option>SMSPANG</option>
+                        <option>SMSPANG2</option>
+                        <option>SMSPANG3</option>
+                      </select>
+                    </div>
+                  </div>
                 </div>
                 <div className="col-md-4 ">
-                  <SelectOp title="รูปแบบการส่ง" />
+                  <div class="form-group row">
+                    <label class="col-sm-4 col-form-label">รูปแบบการส่ง</label>
+                    <div class="col-sm-8">
+                      <select class="form-control circle">
+                        <option>ส่งทันที</option>
+                        <option>ส่งทันที</option>
+                      </select>
+                    </div>
+                  </div>
                 </div>
               </div>
             </CardBlue>
@@ -41,9 +66,15 @@ export default function Sms_sender() {
               <div className="row">
                 <div className="col-md-4 text-center">
                   <strong>เบอร์โทรศัพท์ที่ต้องการส่ง</strong>
-                  <Btn_sender btn_text="ระบุเอง" type="fix" />
-                  <Btn_sender btn_text="เลือกจากแฟ้มรายชื่อ" type="book" />
-                  <Btn_sender btn_text="เลือกจากไฟล์" type="file" />
+                  <div className="item_head_icon top_15">
+                      <a className={'tb_btn btn_radius btn btn-white btn-sender-fix'} >ระบุเอง</a>
+                  </div>
+                  <div className="item_head_icon top_15">
+                      <FileContact/>
+                  </div>
+                  <div className="item_head_icon top_15">
+                      <a className={'tb_btn btn_radius btn btn-white btn-sender-fix'} >เลือกจากแฟ้มรายชื่อ</a>
+                  </div>
                   <br />
                   <button class="btn btn-sender-fix btn_radius mb-1 btn-md btn-white">
                     <div className="d-flex">
@@ -72,8 +103,10 @@ export default function Sms_sender() {
                       placeholder="กรอกเบอร์โทรศัพท์ บรรทัดละ 1 เบอร์ ตัวอย่าง 0877777777"
                     ></textarea>
                   </div>
-                  <br/>
-                    <a className="btn_radius pull-right btn btn-sm btn-pum">ถัดไป </a>
+                  <br />
+                  <a className="btn_radius pull-right btn btn-sm btn-pum">
+                    ถัดไป{" "}
+                  </a>
                 </div>
               </div>
             </CardBlue>

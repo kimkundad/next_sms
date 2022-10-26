@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Blog_detail from '@components/Modal/blog_detail';
 
 export default function Item_blog(props) {
   return (
@@ -11,9 +12,7 @@ export default function Item_blog(props) {
         <div className="card-body">
           <h5 className="card-title">{props.title}</h5>
           <p className="card-text">{props.detail}</p>
-          <Link href={props.get_href}>
-            <a className="btn_radius btn btn-sm btn-pum">อ่านเพิ่มเติม</a>
-          </Link>
+          <Blog_detail id_blog='115'/>
         </div>
       </div>
     </div>

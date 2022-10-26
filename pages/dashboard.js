@@ -6,6 +6,7 @@ import styles from '../styles/Home.module.css'
 import Flickity1 from '@components/flickity'
 import Blog from '@components/blog'
 
+
 export default function Home() {
   return (
     <Fragment>
