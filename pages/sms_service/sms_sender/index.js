@@ -6,9 +6,16 @@ import Card from "@components/card";
 import CardBlue from "@components/cardBlue";
 import Btn_H_sms from "@components/btn_header_sms";
 import FileContact from '@components/Modal/FileContact';
-
+import { useRef } from "react";
 
 export default function Sms_sender() {
+
+  const inputFile = useRef(null) 
+  const onButtonClick = () => {
+    // `current` points to the mounted file input element
+   inputFile.current.click();
+  };
+
   return (
     <Fragment>
       <Head>
@@ -73,7 +80,8 @@ export default function Sms_sender() {
                       <FileContact/>
                   </div>
                   <div className="item_head_icon top_15">
-                      <a className={'tb_btn btn_radius btn btn-white btn-sender-fix'} >เลือกจากแฟ้มรายชื่อ</a>
+                      <a onClick={onButtonClick} className={'tb_btn btn_radius btn btn-white btn-sender-fix'} >เลือกจากไฟล์</a>
+                      <input type='file' id='file' ref={inputFile} style={{display: 'none'}}/>
                   </div>
                   <br />
                   <button class="btn btn-sender-fix btn_radius mb-1 btn-md btn-white">

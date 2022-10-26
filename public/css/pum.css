@@ -262,6 +262,11 @@ td{
     background-color: #4bb7ff !important;
     border-color: #4bb7ff !important;
 }
+.active_bg_blue{
+    color: #000 !important;
+    background-color: #4bb7ff !important;
+    border-color: #4bb7ff !important;
+}
 .no_border{
     border-bottom: none !important;
 }
@@ -275,6 +280,16 @@ td{
 .pad-buy{
     padding: 8px 28px;
     font-size: 18px!important;
+}
+.position_text_example{
+    position: absolute!important;
+    top:25%;
+    width: 80%;
+    left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  padding: 5px;
 }
 .set_rad{
     border-radius: 15px;
