@@ -47,8 +47,8 @@ export default function PaymentHistory_blue(props) {
         overflow="hidden"
         bg="#4bb7ff"
       >
-        <Box p="4" color="#000" fontSize="2xl">
-          <Center>ประวัติการสั่งซื้อ</Center>
+        <Box p="4" color="#fff" fontSize="3xl">
+          <Center >ประวัติการสั่งซื้อ</Center>
             <a onClick={onOpen}>
             <Box p="1"
               maxW="sm"
@@ -57,7 +57,7 @@ export default function PaymentHistory_blue(props) {
               overflow="hidden"
               bg="#ecf9ff"
             >
-              <Box color="#000" fontSize="xl" h='35px'>
+              <Box color="#000" fontSize="2xl" h='35px'>
                 <Center pt='1'>คลิกดูประวัติการสั่งซื้อ</Center>
               </Box>
             </Box>

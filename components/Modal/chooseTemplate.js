@@ -34,7 +34,7 @@ import "@node_modules/flickity/css/flickity.css";
 import CardBlue from "@components/cardBlue";
 import { useRef } from "react";
 
-export default function FileContact(props) {
+export default function chooseTemplate(props) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [getcheckbox, setGetCheckbox] = useState([]);
   const ref = useRef([]);
@@ -53,12 +53,7 @@ export default function FileContact(props) {
   const handleOpen = (e) => {};
   return (
     <>
-      <a
-        onClick={onOpen}
-        className={"tb_btn btn_radius btn btn-white btn-sender-fix"}
-      >
-        เลือกจากแฟ้มรายชื่อ
-      </a>
+      <a onClick={onOpen} className={' tb_btn btn_radius btn btn-white btn-sender-fix'} >เทมเพลตข้อความ</a>
 
       <Modal
         isOpen={isOpen}
@@ -69,7 +64,7 @@ export default function FileContact(props) {
         <ModalOverlay />
         <ModalContent w="800px" background="#4bb7ff" rounded="2xl" p="5">
           <ModalHeader className="text-center text-white" fontSize="2xl" p="1">
-            เลือกจากแฟ้มรายชื่อ
+            เลือกเทมเพลตข้อความ
           </ModalHeader>
           <ModalCloseButton />
           <ModalBody background="#d9efff">
@@ -80,15 +75,15 @@ export default function FileContact(props) {
                   <table className="table table-striped get_coloe_2">
                     <thead>
                       <tr>
-                        <th>ชื่อแฟ้ม</th>
-                        <th>จำนวนเบอร์</th>
+                        <th>ชื่อเทมเพลต</th>
+                        <th>ข้อความ</th>
                         <th>เลือก</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>ประกันชีวิต/ประกันสุขภาพ/ประกันอุบัติเหตุ</td>
-                        <td>273</td>
+                        <td>ลดราคาปีใหม่ 65 (ลด 40%)</td>
+                        <td>โปรโมชั่นพิเศษต้อนรับปีใหม่ ลดทันที 40% สนใจคลิก https://www.facebook.com/</td>
                         <td>
                         <div className="checkbox">
                             <label className="ui-check ui-check-md">
@@ -104,8 +99,8 @@ export default function FileContact(props) {
                         </td>
                       </tr>
                       <tr>
-                        <td>สินค้าจีน</td>
-                        <td>118</td>
+                      <td>ลดราคาปีใหม่ 65 (ลด 40%)</td>
+                        <td>โปรโมชั่นพิเศษต้อนรับปีใหม่ ลดทันที 40% สนใจคลิก https://www.facebook.com/</td>
                         <td>
                         <div className="checkbox">
                             <label className="ui-check ui-check-md">
@@ -121,8 +116,8 @@ export default function FileContact(props) {
                         </td>
                       </tr>
                       <tr>
-                        <td>CRM ลูกค้าคลินิค</td>
-                        <td>82</td>
+                      <td>ลดราคาปีใหม่ 65 (ลด 40%)</td>
+                        <td>โปรโมชั่นพิเศษต้อนรับปีใหม่ ลดทันที 40% สนใจคลิก https://www.facebook.com/</td>
                         <td>
                         <div className="checkbox">
                             <label className="ui-check ui-check-md">
@@ -138,8 +133,8 @@ export default function FileContact(props) {
                         </td>
                       </tr>
                       <tr>
-                        <td>Scoccerbet 888</td>
-                        <td>1,752</td>
+                      <td>ลดราคาปีใหม่ 65 (ลด 40%)</td>
+                        <td>โปรโมชั่นพิเศษต้อนรับปีใหม่ ลดทันที 40% สนใจคลิก https://www.facebook.com/</td>
                         <td>
                         <div className="checkbox">
                             <label className="ui-check ui-check-md">
@@ -155,8 +150,8 @@ export default function FileContact(props) {
                         </td>
                       </tr>
                       <tr>
-                        <td>สินค้าสำเพ็ง ราคาถูก</td>
-                        <td>75</td>
+                      <td>ลดราคาปีใหม่ 65 (ลด 40%)</td>
+                        <td>โปรโมชั่นพิเศษต้อนรับปีใหม่ ลดทันที 40% สนใจคลิก https://www.facebook.com/</td>
                         <td>
                         <div className="checkbox">
                             <label className="ui-check ui-check-md">

@@ -8,6 +8,7 @@ import countriesData from "@components/data/opt";
 import Credit_box from "@components/credit_box";
 import Box_price from "@components/Box_price";
 import { Flex, Spacer, Box } from "@chakra-ui/react";
+import PaymentHistory_blue from '@components/Modal/PaymentHistory_blue';
 
 export default function Payment() {
   const [countries] = useState([...countriesData]);
@@ -39,11 +40,7 @@ export default function Payment() {
             <Flex justifyContent="center" gap="4">
               <Credit_box title="เครดิตคงเหลือ" credit="1282" url="" />
               <Credit_box title="แพ็คเกต" credit="BASIC" url="" />
-              <Credit_box
-                title="ประวัติการสั่งซื้อ"
-                credit="คลิกดูประวัติการสั่งซื้อ"
-                url="payment_history"
-              />
+              <PaymentHistory_blue/>
             </Flex>
             <Box height="5" />
             <hr></hr>

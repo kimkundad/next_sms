@@ -1,12 +1,13 @@
 import React, { Fragment } from "react";
 import Head from "next/head";
-import Image from "next/image";
+import Link from "next/Link";
 import Layouts from "@components/layouts/index";
 import Card from "@components/card";
 import CardBlue from "@components/cardBlue";
 import Btn_H_sms from "@components/btn_header_sms";
 import FileContact from '@components/Modal/FileContact';
 import { useRef } from "react";
+
 
 export default function Sms_sender() {
 
@@ -112,9 +113,11 @@ export default function Sms_sender() {
                     ></textarea>
                   </div>
                   <br />
+                  <Link href='/sms_service/sms_sender/sms_preview_sender'>
                   <a className="btn_radius pull-right btn btn-sm btn-pum">
-                    ถัดไป{" "}
+                    ถัดไป
                   </a>
+                  </Link>
                 </div>
               </div>
             </CardBlue>

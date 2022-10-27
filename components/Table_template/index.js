@@ -26,6 +26,7 @@ import CardBlue from "@components/cardBlue";
 import Btn_icon from "@components/Btn_icon";
 import Dropzone from "react-dropzone";
 
+
 const Table = ({ data, rowsPerPage }) => {
   const [page, setPage] = useState(1);
   const { slice, range } = useTable(data, page, rowsPerPage);

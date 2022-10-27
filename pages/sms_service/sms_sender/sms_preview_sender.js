@@ -30,26 +30,11 @@ import {
   Stack
 } from "@chakra-ui/react";
 import Save_template from "@components/Modal/save_template"
+import ChooseTemplate from "@components/Modal/chooseTemplate"
+import ConfirmSender from '@components/Modal/confirmSender';
 
 export default function Sms_preview_sender() {
 
-  const [isActive1, setActive1] = useState(false);
-  const [isActive2, setActive2] = useState(false);
-
-  React.useEffect(() => {
-    setActive1(true);
-  },[]);
-
-  const toggleClass = (cn) => {
-    console.log(cn)
-    if(cn == 1){
-      setActive1(true);
-      setActive2(false);
-    }else{
-      setActive1(false);
-      setActive2(true);
-    }
-  };
 
   return (
     <Fragment>
@@ -80,10 +65,10 @@ export default function Sms_preview_sender() {
                     <Box mb='5'>
                     <Flex justifyContent="center" gap="2">
                     <div className="item_head_icon top_15">
-                      <a onClick={() => { toggleClass(1); }}  className={isActive1 ? 'active_bg_blue tb_btn btn_radius btn btn-white btn-sender-fix': 'tb_btn btn_radius btn btn-white btn-sender-fix'} >พิมพ์ข้อความ</a>
+                      <a className={'active_bg_blue tb_btn btn_radius btn btn-white btn-sender-fix'} >พิมพ์ข้อความ</a>
                   </div>
                   <div className="item_head_icon top_15">
-                      <a onClick={() => { toggleClass(2); }}  className={isActive2 ? 'active_bg_blue tb_btn btn_radius btn btn-white btn-sender-fix': 'tb_btn btn_radius btn btn-white btn-sender-fix'} >เทมเพลตข้อความ</a>
+                      <ChooseTemplate/>
                   </div>
                       </Flex>
                   </Box>
@@ -155,9 +140,7 @@ export default function Sms_preview_sender() {
                 </div>
                 <div className="col-md-12">
                 <Flex justify="right" mt='5'>
-                <a className="btn_radius pull-right btn btn-sm btn-pum">
-                    ส่งข้อความ
-                  </a>
+                  <ConfirmSender/>
                   </Flex>
                   </div>
               </div>
