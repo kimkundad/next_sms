@@ -3,7 +3,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Layouts from '@components/layouts/index'
 import styles from '../styles/Home.module.css'
-import Flickity1 from '@components/flickity'
 import Blog from '@components/blog'
 
 
@@ -18,7 +17,6 @@ export default function Home() {
       <Layouts>
           <div className='page-content page-container'>
             <div className='padding'>
-              <Flickity1></Flickity1>
               <Blog></Blog>
             </div>
           </div>
