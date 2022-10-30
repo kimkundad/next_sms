@@ -236,7 +236,7 @@ export default function PaymentDetail() {
                       <div className="form-group col-md-6">
                         <label>ธนาคาร</label>
 
-                        <select class="form-control">
+                        <select className="form-control">
                           <option value="">เลือกธนาคาร</option>
                           <option value="1">ธนาคารกสิกรไทย</option>
                           <option value="2">ธนาคารกรุงเทพ</option>

@@ -13,7 +13,7 @@ import {
     useDisclosure 
   } from '@chakra-ui/react'
 
-export default function drawer(props) {
+export default function Drawers(props) {
   const [mobileOpen, setMobileOpen] = React.useState();
   const [isClass, setClass] = useState(false);
   const [isFalse, setisFalse] = useState(false);
@@ -77,7 +77,7 @@ export default function drawer(props) {
         });
 
         return (
-          <li>
+          <li key={prop.layout}>
             <Link href={ prop.layout + prop.path}>
               <a className={listItemClasses}>
                 <span className="nav-icon text-primary">
@@ -104,7 +104,7 @@ export default function drawer(props) {
         });
 
         return (
-          <li>
+          <li key={prop.layout}>
             <Link href={prop.layout + prop.path}>
               <a className={listItemClasses}>
                 <span className="nav-icon text-primary">

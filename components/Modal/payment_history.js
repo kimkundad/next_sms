@@ -34,7 +34,7 @@ import CardBlue2 from "@components/cardBlue2";
 import Table from "@components/table_History";
 import countriesData from "@components/data/payment_history";
 
-export default function payment_history(props) {
+export default function Payment_history(props) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [countries] = useState([...countriesData]);
   return (

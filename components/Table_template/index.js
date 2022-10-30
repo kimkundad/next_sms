@@ -86,7 +86,7 @@ const Table = ({ data, rowsPerPage }) => {
                   />
                 </FormControl>
                 <div className="text-center mt-4">
-                <button class="btn btn-sender-fix btn_radius mb-1 btn-md btn-white">
+                <button className="btn btn-sender-fix btn_radius mb-1 btn-md btn-white">
                     <div className="d-flex">
                       <span>
                         <img
@@ -150,7 +150,7 @@ const Table = ({ data, rowsPerPage }) => {
       </div>
       <br></br>
       <CardBlue>
-        <div class="table-responsive">
+        <div className="table-responsive">
           <table className="table table-striped">
             <thead>
               <tr>
@@ -163,8 +163,8 @@ const Table = ({ data, rowsPerPage }) => {
               </tr>
             </thead>
             <tbody>
-              {slice?.map((el, indexl) => (
-                <tr>
+              {slice?.map((el) => (
+                <tr key={el.date}>
                   <td>{el.date}</td>
                   <td>{el.nameTemplate}</td>
                   <td>{el.massage}</td>

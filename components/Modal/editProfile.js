@@ -28,7 +28,7 @@ import {
   Image,
 } from "@chakra-ui/react";
 
-export default function editProfile(props) {
+export default function EditProfile(props) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>

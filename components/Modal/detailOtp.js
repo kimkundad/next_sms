@@ -34,7 +34,7 @@ import CardBlue2 from "@components/cardBlue2";
 import Table from "@components/table_otp_detail";
 import countriesData from "@components/data/optDetail";
 
-export default function detailOtp(props) {
+export default function DetailOtp(props) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [countries] = useState([...countriesData]);
   return (

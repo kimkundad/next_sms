@@ -8,7 +8,6 @@ import { Flex, Center, Grid, Box, Text, Image } from "@chakra-ui/react";
 export default function Manual() {
   const [youtubeInfo, setyoutubeInfo] = useState('https://www.youtube.com/embed/mC7aTvb9EhE')
   const onChangeYoutube = (e) =>{
-    console.log('--888---', e.currentTarget.dataset.value)
     setyoutubeInfo(e.currentTarget.dataset.value)
   }
   return (
@@ -83,7 +82,7 @@ export default function Manual() {
                 p="4"
                 borderRadius="xl"
                 overflow="hidden"
-              ><iframe width="560" height="315" src={youtubeInfo} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></Box>
+              ><iframe width="560" height="315" src={youtubeInfo} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></Box>
             </Grid>
           </Flex>
         </div>

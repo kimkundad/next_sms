@@ -64,7 +64,7 @@ export default function Aside(props) {
         });
 
         return (
-          <li>
+          <li key={prop.layout}>
             <Link href={ prop.layout + prop.path}>
               <a className={listItemClasses}>
                 <span className="nav-icon text-primary">
@@ -91,7 +91,7 @@ export default function Aside(props) {
         });
 
         return (
-          <li>
+          <li key={prop.layout}>
             <Link href={prop.layout + prop.path}>
               <a className={listItemClasses}>
                 <span className="nav-icon text-primary">

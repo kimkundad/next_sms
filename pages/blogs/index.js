@@ -82,7 +82,7 @@ import {
     				//Generating posts list
             content = (
               <>
-             {props.posts.map(post => { return <Item_blog image="img1.png" title="SMSPANG กลุ่มเป้าหมายได้ อย่างรวดเร็ว" detail="บริการนี้ใช้ได้เฉพราะในเพจสาธารณะ สามารถเติมยอดได้หากอัตราการลดลง มากกว่า 10 เปอร์เซ็นต์ ขึ้นไป การรับประกันจะขาดทันที " get_href="detail/115" /> })};
+             {props.posts.map(post => { return <Item_blog key={post.date} image="img1.png" title="SMSPANG กลุ่มเป้าหมายได้ อย่างรวดเร็ว" detail="บริการนี้ใช้ได้เฉพราะในเพจสาธารณะ สามารถเติมยอดได้หากอัตราการลดลง มากกว่า 10 เปอร์เซ็นต์ ขึ้นไป การรับประกันจะขาดทันที " get_href="detail/115" /> })};
               </>
             );
         }

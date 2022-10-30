@@ -71,7 +71,7 @@ export default function Sms_preview_sender() {
                       </Flex>
                   </Box>
                     <textarea
-                      class="form-control auto_height btn_radius"
+                      className="form-control auto_height btn_radius"
                       rows="9"
                       data-minwords="6"
                       required=""
@@ -83,7 +83,7 @@ export default function Sms_preview_sender() {
                     <Save_template/>
                     </Box>
                     <Flex justifyContent="center" gap="2">
-                    <button class="btn btn-sender-fix btn_radius mb-1 btn-md btn-white">
+                    <button className="btn btn-sender-fix btn_radius mb-1 btn-md btn-white">
                     <div className="d-flex">
                       <span>
                         <img
@@ -99,7 +99,7 @@ export default function Sms_preview_sender() {
                       </div>
                     </div>
                   </button>
-                  <button class="btn btn-sender-fix btn_radius mb-1 btn-md btn-white">
+                  <button className="btn btn-sender-fix btn_radius mb-1 btn-md btn-white">
                     <div className="d-flex">
                       <span>
                         <img

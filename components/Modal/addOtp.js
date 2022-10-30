@@ -26,7 +26,7 @@ import {
   Flex
 } from "@chakra-ui/react";
 import "@node_modules/flickity/css/flickity.css";
-export default function addOtp(props) {
+export default function AddOtp(props) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>

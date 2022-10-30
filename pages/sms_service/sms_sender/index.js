@@ -35,10 +35,10 @@ export default function Sms_sender() {
             <CardBlue>
               <div className="row">
                 <div className="col-md-4 ">
-                  <div class="form-group row">
-                    <label class="col-sm-4 col-form-label">ชื่อเเคมเปญ</label>
-                    <div class="col-sm-8">
-                      <select class="form-control circle">
+                  <div className="form-group row">
+                    <label className="col-sm-4 col-form-label">ชื่อเเคมเปญ</label>
+                    <div className="col-sm-8">
+                      <select className="form-control circle">
                         <option> 03 Jun 2022 [13:21:20]</option>
                         <option> 03 Jun 2022 [13:21:20]</option>
                       </select>
@@ -46,10 +46,10 @@ export default function Sms_sender() {
                   </div>
                 </div>
                 <div className="col-md-4 ">
-                  <div class="form-group row">
-                    <label class="col-sm-4 col-form-label">ชื่อผู้ส่ง</label>
-                    <div class="col-sm-8">
-                      <select class="form-control circle">
+                  <div className="form-group row">
+                    <label className="col-sm-4 col-form-label">ชื่อผู้ส่ง</label>
+                    <div className="col-sm-8">
+                      <select className="form-control circle">
                         <option>SMSPANG</option>
                         <option>SMSPANG2</option>
                         <option>SMSPANG3</option>
@@ -58,10 +58,10 @@ export default function Sms_sender() {
                   </div>
                 </div>
                 <div className="col-md-4 ">
-                  <div class="form-group row">
-                    <label class="col-sm-4 col-form-label">รูปแบบการส่ง</label>
-                    <div class="col-sm-8">
-                      <select class="form-control circle">
+                  <div className="form-group row">
+                    <label className="col-sm-4 col-form-label">รูปแบบการส่ง</label>
+                    <div className="col-sm-8">
+                      <select className="form-control circle">
                         <option>ส่งทันที</option>
                         <option>ส่งทันที</option>
                       </select>
@@ -85,7 +85,7 @@ export default function Sms_sender() {
                       <input type='file' id='file' ref={inputFile} style={{display: 'none'}}/>
                   </div>
                   <br />
-                  <button class="btn btn-sender-fix btn_radius mb-1 btn-md btn-white">
+                  <button className="btn btn-sender-fix btn_radius mb-1 btn-md btn-white">
                     <div className="d-flex">
                       <span>
                         <img
@@ -103,9 +103,9 @@ export default function Sms_sender() {
                   </button>
                 </div>
                 <div className="col-md-8 ">
-                  <div class="form-group">
+                  <div className="form-group">
                     <textarea
-                      class="form-control auto_height btn_radius"
+                      className="form-control auto_height btn_radius"
                       rows="9"
                       data-minwords="6"
                       required=""

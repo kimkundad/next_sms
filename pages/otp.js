@@ -32,25 +32,25 @@ const Otp = () => {
                             <form className="" role="form" action="/new_password">
                                 <div className="form-group">
                                     <label>หมายเลขอ้างอิง OTP</label>
-                                    <input type="text" className="form-control" readonly />
+                                    <input type="text" className="form-control" />
                                 </div>
                                 <div className="form-group row get_pad_r_l mt-2">
-                                    <input type="text" className="form-control inputs otp1 verifyPhone " maxlength="1" name="otp1" />
+                                    <input type="text" className="form-control inputs otp1 verifyPhone "  name="otp1" />
 
 
-                                    <input type="text" className="form-control inputs otp2 verifyPhone " maxlength="1" name="otp2" />
+                                    <input type="text" className="form-control inputs otp2 verifyPhone "  name="otp2" />
 
 
-                                    <input type="text" className="form-control inputs otp3 verifyPhone " maxlength="1" name="otp3" />
+                                    <input type="text" className="form-control inputs otp3 verifyPhone "  name="otp3" />
 
 
-                                    <input type="text" className="form-control inputs otp4 verifyPhone " maxlength="1" name="otp4" />
+                                    <input type="text" className="form-control inputs otp4 verifyPhone "  name="otp4" />
 
 
-                                    <input type="text" className="form-control inputs otp5 verifyPhone " maxlength="1" name="otp5" />
+                                    <input type="text" className="form-control inputs otp5 verifyPhone "  name="otp5" />
 
 
-                                    <input type="text" className="form-control inputs otp6 verifyPhone " maxlength="1" name="otp6" />
+                                    <input type="text" className="form-control inputs otp6 verifyPhone "  name="otp6" />
 
                                 </div>
                                 

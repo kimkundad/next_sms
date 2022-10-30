@@ -12,7 +12,7 @@ import Table from "@components/table_otp_service";
 import countriesData from "@components/data/opt";
 
 
-export default function otp_service() {
+export default function Otp_service() {
     const [countries] = useState([...countriesData]);
   return (
     <Fragment>

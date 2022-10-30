@@ -34,7 +34,7 @@ import "@node_modules/flickity/css/flickity.css";
 import CardBlue from "@components/cardBlue";
 import { useRef } from "react";
 
-export default function chooseTemplate(props) {
+export default function ChooseTemplate(props) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [getcheckbox, setGetCheckbox] = useState([]);
   const ref = useRef([]);

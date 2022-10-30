@@ -103,7 +103,7 @@ export default function Card_white(props) {
                 <hr className="hr-grey"></hr>
                 <Box h="3"></Box>
                 <div className="form-group">
-                  <label class="text-muted" for="exampleInputEmail1">
+                  <label className="text-muted" >
                     Card Number
                   </label>
                   <input

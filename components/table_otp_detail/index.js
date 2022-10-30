@@ -105,7 +105,7 @@ const Table = ({ data, rowsPerPage }) => {
             </div>
           </div>
         </div>
-        <div class="table-responsive">
+        <div className="table-responsive">
           <table className="table table-striped">
             <thead>
               <tr>
@@ -117,8 +117,8 @@ const Table = ({ data, rowsPerPage }) => {
               </tr>
             </thead>
             <tbody>
-              {slice?.map((el, indexl) => (
-                <tr>
+              {slice?.map((el) => (
+                <tr key={el.phone}>
                   <td>{el.date}</td>
                   <td>{el.enddate}</td>
                   <td>{el.phone}</td>

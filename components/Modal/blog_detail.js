@@ -19,7 +19,7 @@ import Table from "@components/table_History";
 import blogs_data from "@components/data/blogs";
 
 
-    const blog_detail = (props) => {
+    const Blog_details = (props) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [blogsData] = useState([...blogs_data]);
   console.log('-xxxxx----', props.id_blog)
@@ -59,4 +59,4 @@ export async function getServerSideProps({ query }) {
       }
     }
     
-export default blog_detail
+export default Blog_details

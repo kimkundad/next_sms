@@ -32,7 +32,7 @@ import "@node_modules/flickity/css/flickity.css";
 import Card from "@components/card";
 import CardBlue2 from "@components/cardBlue2";
 
-export default function editOtp(props) {
+export default function EditOtp(props) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>

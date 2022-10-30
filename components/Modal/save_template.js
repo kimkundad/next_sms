@@ -70,7 +70,7 @@ export default function Save_template(props) {
                   />
                 </FormControl>
                 <div className="text-center mt-4">
-                <button class="btn btn-sender-fix btn_radius mb-1 btn-md btn-white">
+                <button className="btn btn-sender-fix btn_radius mb-1 btn-md btn-white">
                     <div className="d-flex">
                       <span>
                         <img

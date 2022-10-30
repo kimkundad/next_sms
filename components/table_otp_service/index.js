@@ -63,7 +63,7 @@ const Table = ({ data, rowsPerPage }) => {
       </div>
       <br></br>
       <CardBlue>
-        <div class="table-responsive">
+        <div className="table-responsive">
           <table className="table table-striped">
             <thead>
               <tr>
@@ -75,8 +75,8 @@ const Table = ({ data, rowsPerPage }) => {
               </tr>
             </thead>
             <tbody>
-              {slice?.map((el, indexl) => (
-                <tr>
+              {slice?.map((el) => (
+                <tr key={el.date}>
                   <td>{el.date}</td>
                   <td>{el.name}</td>
                   <td>{el.AppKey}</td>
