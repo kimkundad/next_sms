@@ -27,6 +27,7 @@ import {
   InputGroup,
   CopyIcon,
   InputRightElement,
+  Image 
 } from "@chakra-ui/react";
 import "@node_modules/flickity/css/flickity.css";
 
@@ -187,11 +188,9 @@ export default function ConfirmSender(props) {
         bg="#e2f4fe">
                     <Text fontSize='lg'> โปรโมชั่นพิเศษ 9.9 ลูกค้าเก่าลดทันที 40% คลิ๊ก https://xxxxxxxx.com</Text>
                     </Box>
-                    <img
-                      width="100%"
+                    <Image w="100%"
                       className="flu-id"
-                      src="/image/icon_3/preview.png"
-                    />
+                      src="/image/icon_3/preview.png" />
                     </Box>
                   </div>
                 </div>

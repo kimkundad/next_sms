@@ -1,6 +1,5 @@
 import React, { Fragment, useState } from "react";
 import Head from "next/head";
-import Image from "next/image";
 import Layouts from "@components/layouts/index";
 import Card from "@components/card";
 import CardBlue from "@components/cardBlue";
@@ -8,7 +7,7 @@ import Btn_H_sms from "@components/btn_header_sms";
 import Btn_link from "@components/btn_link";
 import {
   Flex,
-  Heading,
+  Image,
   Box,
   Link,
   Spacer,
@@ -86,10 +85,7 @@ export default function Sms_preview_sender() {
                     <button className="btn btn-sender-fix btn_radius mb-1 btn-md btn-white">
                     <div className="d-flex">
                       <span>
-                        <img
-                          className="w-50 "
-                          src="/image/icon_3/font.png"
-                        />
+                        <Image className="w-50 " src='/image/icon_3/font.png' />
                       </span>
                       <div className="mx-3 ">
                         <strong className="phone_item_new">
@@ -102,10 +98,8 @@ export default function Sms_preview_sender() {
                   <button className="btn btn-sender-fix btn_radius mb-1 btn-md btn-white">
                     <div className="d-flex">
                       <span>
-                        <img
-                          className="w-50 "
-                          src="/image/icon_3/text-message (1).png"
-                        />
+                       
+                        <Image className="w-50 " src='/image/icon_3/text-message (1).png' />
                       </span>
                       <div className="mx-3 ">
                         <strong className="phone_item_new">
@@ -129,11 +123,7 @@ export default function Sms_preview_sender() {
         bg="#e2f4fe">
                     <Text fontSize='lg'> โปรโมชั่นพิเศษ 9.9 ลูกค้าเก่าลดทันที 40% คลิ๊ก https://xxxxxxxx.com</Text>
                     </Box>
-                    <img
-                      width="100%"
-                      className="flu-id"
-                      src="/image/icon_3/preview.png"
-                    />
+                    <Image className="flu-id" src='/image/icon_3/preview.png' />
                     </Box>
                 </div>
                 <div className="col-md-12">

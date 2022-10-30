@@ -59,7 +59,9 @@ export default function Card_white(props) {
                         alt="Prompt Pay Logo"
                       />
                     </Box>
-                    <img src="https://promptpay.io/0902160080/1500.png" />
+                    <Image
+                      src="https://promptpay.io/0902160080/1500.png"
+                    />
                   </Stack>
                   <Flex color="black" spacing="0">
                     <Text fontWeight={600}>SEP SOCIAL MEDIA</Text>
@@ -154,7 +156,7 @@ export default function Card_white(props) {
                 </button>
                 <div className="text-center">
                   <Flex justify="center">
-                    <img
+                    <Image
                       className="h-35"
                       src="/image/icon_2/1657994456512.jpg"
                     />

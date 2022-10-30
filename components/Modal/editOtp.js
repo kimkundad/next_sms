@@ -26,7 +26,8 @@ import {
   Flex,
   InputGroup ,
   CopyIcon,
-  InputRightElement 
+  InputRightElement ,
+  Image 
 } from "@chakra-ui/react";
 import "@node_modules/flickity/css/flickity.css";
 import Card from "@components/card";
@@ -40,7 +41,7 @@ export default function EditOtp(props) {
         onClick={onOpen}
         className="btn_icon_sig btn_radius min-w-btn2 btn btn-white btn-sm mr5"
       >
-        <img className="w-20" src="/image/icon_3/edit.png" />
+        <Image className="w-20" src="/image/icon_3/edit.png" />
       </a>
       
       <Modal
@@ -68,7 +69,7 @@ export default function EditOtp(props) {
                 />
                 <InputRightElement width='4.5rem'>
                     <Button h='1.75rem' size='sm' background="#fff">
-                    <img className="w-20" src="/image/icon_3/copy.png" />
+                    <Image className="w-20" src="/image/icon_3/copy.png" />
                     </Button>
                 </InputRightElement>
                 </InputGroup>
@@ -83,7 +84,7 @@ export default function EditOtp(props) {
                 />
                 <InputRightElement width='4.5rem'>
                     <Button h='1.75rem' size='sm' background="#fff">
-                    <img className="w-20" src="/image/icon_3/copy.png" />
+                    <Image className="w-20" src="/image/icon_3/copy.png"  />
                     </Button>
                 </InputRightElement>
                 </InputGroup>
@@ -147,7 +148,7 @@ export default function EditOtp(props) {
                     </Select>
                 </FormControl>
                 <Flex mt={3}>
-                    <img className="w-20 mar-ri-10" src="/image/icon_3/check copy.png" />
+                    <Image className="w-20 mar-ri-10" src="/image/icon_3/check copy.png" />
                     <Text fontSize='xl'> รหัสอ้างอิง</Text>
                 </Flex>
               </div>
@@ -160,10 +161,9 @@ export default function EditOtp(props) {
         bg="#e2f4fe">
                     <Text fontSize='lg'> โปรโมชั่นพิเศษ 9.9 ลูกค้าเก่าลดทันที 40% คลิ๊ก https://xxxxxxxx.com</Text>
                     </Box>
-              <img  width="100%"
+                    <Image w="100%"
                       className="flu-id"
-                      src="/image/icon_3/preview.png"
-                    />
+                      src="/image/icon_3/preview.png" />
               </div>
             </div>
           </ModalBody>

@@ -26,7 +26,8 @@ import {
   Flex,
   InputGroup ,
   CopyIcon,
-  InputRightElement 
+  InputRightElement ,
+  Image 
 } from "@chakra-ui/react";
 import "@node_modules/flickity/css/flickity.css";
 import Card from "@components/card";
@@ -43,7 +44,7 @@ export default function DetailOtp(props) {
         onClick={onOpen}
         className="btn_icon_sig btn_radius min-w-btn2 btn btn-white btn-sm mr5"
       >
-        <img className="w-20" src="/image/icon_3/report.png" />
+        <Image className="w-20" src="/image/icon_3/report.png" />
       </a>
       
       <Modal

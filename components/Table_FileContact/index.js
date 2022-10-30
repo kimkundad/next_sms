@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {
-    Box 
+    Box , Image 
   } from "@chakra-ui/react";
 import useTable from "@components/hooks/useTable";
 import TableFooter from "@components/Table/TableFooter";
@@ -19,7 +19,7 @@ const Table = ({ data, rowsPerPage }) => {
       value: "มีนาคม 2565",
       label: (
         <div>
-          <img src={image_2.src} className="pull-left" height="26px" width="26px" /> มีนาคม 2565{" "}
+          <Image  alt="description of image" src={image_2.src} className="pull-left" h="26px" w="26px" /> มีนาคม 2565
         </div>
       ),
     },
@@ -27,7 +27,7 @@ const Table = ({ data, rowsPerPage }) => {
       value: "เมษายน 2565",
       label: (
         <div>
-          <img src={image_2.src} className="pull-left" height="26px" width="26px" /> เมษายน 2565{" "}
+          <Image  alt="description of image" src={image_2.src} className="pull-left" h="26px" w="26px" /> เมษายน 2565{" "}
         </div>
       ),
     },
@@ -35,7 +35,7 @@ const Table = ({ data, rowsPerPage }) => {
       value: "พฤษภาคม 2565",
       label: (
         <div>
-          <img src={image_2.src} className="pull-left" height="26px" width="26px" /> พฤษภาคม 2565{" "}
+          <Image  alt="description of image" src={image_2.src} className="pull-left" h="26px" w="26px" /> พฤษภาคม 2565{" "}
         </div>
       ),
     },

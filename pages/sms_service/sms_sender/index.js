@@ -7,7 +7,8 @@ import Btn_H_sms from "@components/btn_header_sms";
 import FileContact from '@components/Modal/FileContact';
 import { useRef } from "react";
 import {
-  Link
+  Link,
+  Image 
 } from "@chakra-ui/react";
 
 
@@ -88,10 +89,7 @@ export default function Sms_sender() {
                   <button className="btn btn-sender-fix btn_radius mb-1 btn-md btn-white">
                     <div className="d-flex">
                       <span>
-                        <img
-                          className="w-50 "
-                          src="/image/icon_3/text-message (1).png"
-                        />
+                        <Image  alt="description of image" className="w-50 " src='/image/icon_3/text-message (1).png' />
                       </span>
                       <div className="mx-3 ">
                         <strong className="phone_item_new">

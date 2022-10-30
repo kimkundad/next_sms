@@ -15,7 +15,8 @@ import {
   FormControl ,
   FormLabel ,
   Input ,
-  Textarea 
+  Textarea ,
+  Image
 } from "@chakra-ui/react";
 import "@node_modules/flickity/css/flickity.css";
 
@@ -73,10 +74,8 @@ export default function Save_template(props) {
                 <button className="btn btn-sender-fix btn_radius mb-1 btn-md btn-white">
                     <div className="d-flex">
                       <span>
-                        <img
-                          className="w-50 "
-                          src="/image/icon_3/text-message (1).png"
-                        />
+                        <Image className="w-50 "
+                          src="/image/icon_3/text-message (1).png" />
                       </span>
                       <div className="mx-3 ">
                         <strong className="phone_item_new">

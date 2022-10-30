@@ -11,6 +11,7 @@ import {
   TabPanel,
   Textarea,
   useDisclosure,
+  Image
 } from "@chakra-ui/react";
 import useTable from "@components/hooks/useTable";
 import TableFooter from "@components/Table/TableFooter";
@@ -44,10 +45,8 @@ const Table = ({ data, rowsPerPage }) => {
                   type="button"
                 >
                   <span className="d-flex text-muted">
-                    <img
-                      className="w-25 mar-ri-10"
-                      src="/image/icon_2/search.png"
-                    />
+                    <Image  alt="description of image" className="w-25 mar-ri-10"
+                      src="/image/icon_2/search.png" />
                   </span>
                 </button>
               </span>

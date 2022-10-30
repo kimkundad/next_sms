@@ -4,7 +4,7 @@ import Layouts from "@components/layouts/index";
 import Card from "@components/card";
 import {
   Flex,
-  Heading,
+  Image,
   Box,
   Link,
   Spacer,
@@ -194,10 +194,7 @@ export default function PaymentDetail() {
                       <Spacer />
                       <Box>
                         <Flex>
-                          <img
-                            className="w-30 "
-                            src="/image/1655955831-22713007.png"
-                          />
+                          <Image className="w-30 " src='/image/1655955831-22713007.png' />
                           <Text pl="2" fontSize="2xl">
                             โอนเงินธนาคารกสิกรไทย
                           </Text>
@@ -306,15 +303,9 @@ export default function PaymentDetail() {
                           <input {...getInputProps()} />
                           <span className="d-flex justify-content-center">
                             {isDragActive ? (
-                              <img
-                                className="w-50"
-                                src="/image/icon_3/upload (6).png"
-                              />
+                              <Image className="w-50 " src='/image/icon_3/upload (6).png' />
                             ) : (
-                              <img
-                                className="w-50"
-                                src="/image/icon_3/upload (6).png"
-                              />
+                              <Image className="w-50 " src='/image/icon_3/upload (6).png' />
                             )}
                           </span>
                           <p>เลือกไฟล์</p>

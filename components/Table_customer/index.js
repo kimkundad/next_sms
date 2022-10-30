@@ -18,6 +18,7 @@ import {
   Tab,
   TabPanel,
   Textarea,
+  Image 
 } from "@chakra-ui/react";
 import useTable from "@components/hooks/useTable";
 import TableFooter from "@components/Table/TableFooter";
@@ -42,7 +43,8 @@ const Table = ({ data, rowsPerPage }) => {
               onClick={onOpen}
               className="btn_radius min-w-btn2 btn btn-white btn-sm"
             >
-              <img className="w-20 mar-ri-10" src="/image/icon_3/folder.png" />
+              <Image  alt="description of image" className="w-20 mar-ri-10"
+                      src="/image/icon_3/folder.png" />
               <b>เพิ่มแฟ้มรายชื่อ</b>
             </a>
           </div>
@@ -120,15 +122,11 @@ const Table = ({ data, rowsPerPage }) => {
                               <input {...getInputProps()} />
                               <span className="d-flex justify-content-center">
                                 {isDragActive ? (
-                                  <img
-                                    className="w-50"
-                                    src="/image/icon_3/upload (6).png"
-                                  />
+                                  <Image  alt="description of image" className="w-50"
+                                  src="/image/icon_3/upload (6).png" />
                                 ) : (
-                                  <img
-                                    className="w-50"
-                                    src="/image/icon_3/upload (6).png"
-                                  />
+                                  <Image  alt="description of image" className="w-50"
+                                  src="/image/icon_3/upload (6).png" />
                                 )}
                               </span>
                               <p>เลือกไฟล์</p>
@@ -175,10 +173,8 @@ const Table = ({ data, rowsPerPage }) => {
                   type="button"
                 >
                   <span className="d-flex text-muted">
-                    <img
-                      className="w-25 mar-ri-10"
-                      src="/image/icon_2/search.png"
-                    />
+                    <Image  alt="description of image" className="w-25 mar-ri-10"
+                      src="/image/icon_2/search.png" />
                   </span>
                 </button>
               </span>

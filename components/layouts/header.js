@@ -10,6 +10,7 @@ import {
   MenuGroup,
   MenuOptionGroup,
   MenuDivider,
+  Image
 } from "@chakra-ui/react";
 import Drawer from '@components/layouts/Drawer';
 import routes from "routes.js";
@@ -27,7 +28,7 @@ export default function Header(props) {
       <div className="navbar navbar-expand-lg">
         <Link href="/dashboard">
           <a className="navbar-brand d-lg-none">
-            <img src="/image/Logo_Pumppang.png" className="img-fluid" />
+            <Image className="img-fluid" src='/image/Logo_Pumppang.png' />
           </a>
         </Link>
         <ul className="nav navbar-menu order-1 order-lg-2">
@@ -38,10 +39,7 @@ export default function Header(props) {
             >
               <div className="d-flex">
                 <span>
-                  <img
-                    className="w-30 "
-                    src="/image/icon_3/text-message (1).png"
-                  />
+                  <Image className="w-30 " src='/image/icon_3/text-message (1).png' />
                 </span>
                 <div className="mx-3 hi-30">
                   <strong className="nav_item_new">เครดิตคงเหลือ</strong>
@@ -59,7 +57,7 @@ export default function Header(props) {
                 >
                   <div className="d-flex">
                     <span>
-                      <img className="w-30 " src="/image/icon_2/wallet.png" />
+                      <Image className="w-30 " src='/image/icon_2/wallet.png' />
                     </span>
                     <div className="mx-3 hi-30">
                       <small className="nav_item_new_price2">เครดิต</small>

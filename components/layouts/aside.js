@@ -2,6 +2,7 @@ import React, { Fragment, useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import classNames from "classnames";
+import { Image } from '@chakra-ui/react'
 
 export default function Aside(props) {
   const [mobileOpen, setMobileOpen] = React.useState();
@@ -48,7 +49,7 @@ export default function Aside(props) {
                   <Link href="/">
                     <a href="#" className="">
                       <span className="nav-icon text-primary">
-                        <img className="w-30 " src="/image/icon_3/text-message (1).png" />
+                        <Image className="w-30 " src='/image/icon_3/text-message (1).png' />
                       </span>
                       <span className="nav-text">
                         ปังคงเหลือ <b>1,282</b> ปัง
@@ -68,7 +69,7 @@ export default function Aside(props) {
             <Link href={ prop.layout + prop.path}>
               <a className={listItemClasses}>
                 <span className="nav-icon text-primary">
-                  <img className="w-30 " src={'/image/icon_3/'+prop.icon}/>
+                <Image className="w-30 " src={'/image/icon_3/'+prop.icon} />
                 </span>
                 <span className="nav-text">{prop.name}</span>
               </a>
@@ -95,7 +96,7 @@ export default function Aside(props) {
             <Link href={prop.layout + prop.path}>
               <a className={listItemClasses}>
                 <span className="nav-icon text-primary">
-                <img className="w-30 " src={'/image/icon_3/'+prop.icon}/>
+                <Image className="w-30 " src={'/image/icon_3/'+prop.icon} />
                 </span>
                 <span className="nav-text">{prop.name}</span>
               </a>
@@ -121,7 +122,7 @@ export default function Aside(props) {
           <div className="navbar bg_yello">
             <Link href="/">
               <a className="navbar-brand ">
-                <img src="/image/Logo_Pumppang.png" className="img-fluid" />
+                <Image className="img-fluid" src='/image/Logo_Pumppang.png' />
               </a>
             </Link>
             <button

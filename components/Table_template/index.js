@@ -18,6 +18,7 @@ import {
   Tab,
   TabPanel,
   Textarea,
+  Image 
 } from "@chakra-ui/react";
 import useTable from "@components/hooks/useTable";
 import TableFooter from "@components/Table/TableFooter";
@@ -43,7 +44,7 @@ const Table = ({ data, rowsPerPage }) => {
               onClick={onOpen}
               className="btn_radius min-w-btn2 btn btn-white btn-sm"
             >
-              <img className="w-20 mar-ri-10" src="/image/icon_3/plus.png" />
+              <Image  alt="description of image" className="w-20 mar-ri-10" src="/image/icon_3/plus.png" />
               <b>เพิ่มเทมเพลตข้อความ</b>
             </a>
           </div>
@@ -89,10 +90,8 @@ const Table = ({ data, rowsPerPage }) => {
                 <button className="btn btn-sender-fix btn_radius mb-1 btn-md btn-white">
                     <div className="d-flex">
                       <span>
-                        <img
-                          className="w-50 "
-                          src="/image/icon_3/text-message (1).png"
-                        />
+                        <Image  alt="description of image" className="w-50 "
+                          src="/image/icon_3/text-message (1).png" />
                       </span>
                       <div className="mx-3 ">
                         <strong className="phone_item_new">
@@ -131,10 +130,8 @@ const Table = ({ data, rowsPerPage }) => {
                   type="button"
                 >
                   <span className="d-flex text-muted">
-                    <img
-                      className="w-25 mar-ri-10"
-                      src="/image/icon_2/search.png"
-                    />
+                    <Image  alt="description of image" className="w-25 mar-ri-10"
+                      src="/image/icon_2/search.png" />
                   </span>
                 </button>
               </span>

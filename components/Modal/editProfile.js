@@ -33,7 +33,7 @@ export default function EditProfile(props) {
   return (
     <>
         <a onClick={onOpen} className=" min-w-btn2 btn btn-white btn-sm mr5 btn-pum-edit">
-          <img className="w-20 mar-ri-10" src="/image/icon_3/edit.png" />
+          <Image className="w-20 mar-ri-10" src="/image/icon_3/edit.png" />
           <b>แก้ไข</b>
         </a>
       <Modal

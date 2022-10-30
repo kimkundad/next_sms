@@ -18,7 +18,8 @@ import {
   Tab,
   TabPanel,
   Textarea,
-  Box
+  Box,
+  Image 
 } from "@chakra-ui/react";
 import useTable from "@components/hooks/useTable";
 import TableFooter from "@components/Table/TableFooter";
@@ -85,15 +86,15 @@ const Table = ({ data, rowsPerPage }) => {
       <div className="d-flex justify-content-between">
         <Box >
         <p className="table_bot_text_p ">
-          <img className="pull-left w-20 mar-ri-10" src="/image/icon_2/check copy.png" />
+          <Image  alt="description of image" className="pull-left w-20 mar-ri-10" src="/image/icon_2/check copy.png" />
           ส่งสำเร็จ - ส่งข้อความไปถึงผู้รับเรียบร้อย
         </p>
         <p className="table_bot_text_p  mt-1">
-          <img className="pull-left w-20 mar-ri-10" src="/image/icon_2/cancel copy.png" />
+          <Image  alt="description of image" className="pull-left w-20 mar-ri-10" src="/image/icon_2/cancel copy.png" />
           ส่งไม่สำเร็จ - ไม่สามารถส่งข้อความไปถึงผู้รับได้ ( เครือข่ายหรือ ระบบ TBS ขัดข้อง,ผู้ส่งอยุ่ใน Blacklist )
         </p>
         <p className="table_bot_text_p  mt-1">
-          <img className="pull-left w-20 mar-ri-10" src="/image/icon_2/loading.png" />
+          <Image  alt="description of image" className="pull-left w-20 mar-ri-10" src="/image/icon_2/loading.png"  />
           รอดำเนินการ - ระบบกำลังส่งข้อความไปยังผู้รับ
         </p>
         </Box>

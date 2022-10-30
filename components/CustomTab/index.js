@@ -23,7 +23,7 @@ import {
   Center,
   Checkbox,
   CheckboxGrou,
-  Stack,
+  Image,
 } from "@chakra-ui/react";
 import Btn_link from "@components/btn_link";
 
@@ -40,10 +40,7 @@ const CustomTab = React.forwardRef((props, ref) => {
         <Button __css={styles.tab} {...tabProps}>
           <Box as="span" mr="2">
             {isSelected ? (
-              <img
-                className="w-20  pull-left"
-                src="/image/icon_3/check copy.png"
-              />
+              <Image className="w-20  pull-left" src='/image/icon_3/check copy.png' />
             ) : (
               <i className="fa fa-circle-o "></i>
             )}

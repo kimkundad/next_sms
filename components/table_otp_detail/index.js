@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {
-    Box 
+    Box , Image 
   } from "@chakra-ui/react";
 import useTable from "@components/hooks/useTable";
 import TableFooter from "@components/Table/TableFooter";
@@ -19,7 +19,7 @@ const Table = ({ data, rowsPerPage }) => {
       value: "มีนาคม 2565",
       label: (
         <div>
-          <img src={image_2.src} className="pull-left" height="26px" width="26px" /> มีนาคม 2565{" "}
+          <Image  alt="description of image" src={image_2.src} className="pull-left" h="26px" w="26px" /> มีนาคม 2565
         </div>
       ),
     },
@@ -27,7 +27,7 @@ const Table = ({ data, rowsPerPage }) => {
       value: "เมษายน 2565",
       label: (
         <div>
-          <img src={image_2.src} className="pull-left" height="26px" width="26px" /> เมษายน 2565{" "}
+          <Image  alt="description of image" src={image_2.src} className="pull-left" h="26px" w="26px" /> เมษายน 2565{" "}
         </div>
       ),
     },
@@ -35,7 +35,7 @@ const Table = ({ data, rowsPerPage }) => {
       value: "พฤษภาคม 2565",
       label: (
         <div>
-          <img src={image_2.src} className="pull-left" height="26px" width="26px" /> พฤษภาคม 2565{" "}
+          <Image  alt="description of image" src={image_2.src} className="pull-left" h="26px" w="26px" /> พฤษภาคม 2565{" "}
         </div>
       ),
     },
@@ -72,10 +72,9 @@ const Table = ({ data, rowsPerPage }) => {
                   type="button"
                 >
                   <span className="d-flex text-muted">
-                    <img
-                      className="w-25 mar-ri-10"
-                      src="/image/icon_2/search.png"
-                    />
+                    
+                    <Image  alt="description of image" className="w-25 mar-ri-10"
+                      src="/image/icon_2/search.png" />
                   </span>
                 </button>
               </span>
@@ -96,10 +95,8 @@ const Table = ({ data, rowsPerPage }) => {
                 placeholder="Select an option"
               />
               <a className="btn_radius min-w-btn2 btn btn-white btn-sm">
-                <img
-                  className="w-20 mar-ri-10"
-                  src="/image/icon_3/cloud-computing.png"
-                />
+                <Image  alt="description of image" className="w-20 mar-ri-10"
+                  src="/image/icon_3/cloud-computing.png" />
                 <b>ดาวน์โหลดรายงาน</b>{" "}
               </a>
             </div>
@@ -153,15 +150,15 @@ const Table = ({ data, rowsPerPage }) => {
       <div className="d-flex justify-content-between">
         <Box >
         <p className="table_bot_text_p ">
-          <img className="pull-left w-20 mar-ri-10" src="/image/icon_2/check copy.png" />
+          <Image  alt="description of image" className="pull-left w-20 mar-ri-10" src="/image/icon_2/check copy.png"  />
           ส่งสำเร็จ - ส่งข้อความไปถึงผู้รับเรียบร้อย
         </p>
         <p className="table_bot_text_p  mt-1">
-          <img className="pull-left w-20 mar-ri-10" src="/image/icon_2/cancel copy.png" />
+          <Image  alt="description of image" className="pull-left w-20 mar-ri-10" src="/image/icon_2/cancel copy.png" />
           ส่งไม่สำเร็จ - ไม่สามารถส่งข้อความไปถึงผู้รับได้ ( เครือข่ายหรือ ระบบ TBS ขัดข้อง,ผู้ส่งอยุ่ใน Blacklist )
         </p>
         <p className="table_bot_text_p  mt-1">
-          <img className="pull-left w-20 mar-ri-10" src="/image/icon_2/loading.png" />
+          <Image  alt="description of image" className="pull-left w-20 mar-ri-10" src="/image/icon_2/loading.png" />
           รอดำเนินการ - ระบบกำลังส่งข้อความไปยังผู้รับ
         </p>
         </Box>

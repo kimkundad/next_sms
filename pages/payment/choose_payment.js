@@ -1,10 +1,9 @@
 import React, { Fragment, useState } from "react";
 import Head from "next/head";
-import Image from "next/image";
 import Layouts from "@components/layouts/index";
 import Card from "@components/card";
 import CardBlue from "@components/cardBlue";
-import { Flex, Spacer, Box, Text } from "@chakra-ui/react";
+import { Flex, Spacer, Box, Text, Image  } from "@chakra-ui/react";
 import Btn_link from "@components/btn_link";
 import Card_white from "@components/Card_white";
 

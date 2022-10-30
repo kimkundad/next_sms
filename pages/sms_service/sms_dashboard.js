@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import Head from "next/head";
-import Image from "next/image";
 import Layouts from "@components/layouts/index";
 import styles from "../../styles/Home.module.css";
 import Card from "@components/card";
@@ -11,6 +10,7 @@ import image_2 from "@public/image/icon_3/calendar.png";
 import LineChart1 from "@components/LineChart";
 import BarChart1 from "@components/BarChart";
 import "react-dropdown/style.css";
+import { Image } from '@chakra-ui/react'
 
 export default function Sms_dashboard() {
   console.log("-----", image_2.src);
@@ -19,7 +19,7 @@ export default function Sms_dashboard() {
       value: "มีนาคม 2565",
       label: (
         <div>
-          <img src={image_2.src} className="pull-left" height="26px" width="26px" /> มีนาคม 2565{" "}
+          <Image className="pull-left" src={image_2.src} h="26px" w="26px" /> มีนาคม 2565
         </div>
       ),
     },
@@ -27,7 +27,7 @@ export default function Sms_dashboard() {
       value: "เมษายน 2565",
       label: (
         <div>
-          <img src={image_2.src} className="pull-left" height="26px" width="26px" /> เมษายน 2565{" "}
+          <Image className="pull-left" src={image_2.src} h="26px" w="26px" /> มีนาคม 2565
         </div>
       ),
     },
@@ -35,7 +35,7 @@ export default function Sms_dashboard() {
       value: "พฤษภาคม 2565",
       label: (
         <div>
-          <img src={image_2.src} className="pull-left" height="26px" width="26px" /> พฤษภาคม 2565{" "}
+          <Image className="pull-left" src={image_2.src} h="26px" w="26px" /> มีนาคม 2565
         </div>
       ),
     },

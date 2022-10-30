@@ -27,7 +27,7 @@ import {
   RadioGroup,
   Stack,
   Radio,
-  Checkbox, CheckboxGroup, Link
+  Checkbox, CheckboxGroup, Link ,Image 
 } from "@chakra-ui/react";
 import "@node_modules/flickity/css/flickity.css";
 import Dropzone from "react-dropzone";
@@ -43,7 +43,7 @@ export default function EditContact(props) {
         onClick={onOpen}
         className="btn_icon_sig btn_radius min-w-btn2 btn btn-white btn-sm mr5"
       >
-        <img className="w-20" src="/image/icon_3/edit.png" />
+        <Image className="w-20" src="/image/icon_3/edit.png" />
       </a>
       <Modal
         isOpen={isOpen}
@@ -119,15 +119,11 @@ export default function EditContact(props) {
                               <input {...getInputProps()} />
                               <span className="d-flex justify-content-center">
                                 {isDragActive ? (
-                                  <img
-                                    className="w-50"
-                                    src="/image/icon_3/upload (6).png"
-                                  />
+                                  <Image className="w-50"
+                                  src="/image/icon_3/upload (6).png" />
                                 ) : (
-                                  <img
-                                    className="w-50"
-                                    src="/image/icon_3/upload (6).png"
-                                  />
+                                  <Image className="w-50"
+                                  src="/image/icon_3/upload (6).png" />
                                 )}
                               </span>
                               <p>เลือกไฟล์</p>
