@@ -22,15 +22,14 @@ export default function Sms_report() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layouts>
-        <div className="page-hero page-container " id="page-hero">
-          <div className="padding text-center"></div>
-        </div>
         <div className="page-content page-container">
+        <div className='padding'>
             <Btn_H_sms></Btn_H_sms>
           <br />
           <Card>
             <Table data={countries} rowsPerPage={10} />
           </Card>
+        </div>
         </div>
       </Layouts>
     </Fragment>

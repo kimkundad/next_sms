@@ -16,13 +16,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layouts>
-          <div className="page-hero page-container " id="page-hero">
-            <div className="padding text-center">
-            </div>
-          </div>
           <div className='page-content page-container'>
-            <Flickity1></Flickity1>
-            <Blog></Blog>
+            <div className='padding'>
+              <Flickity1></Flickity1>
+              <Blog></Blog>
+            </div>
           </div>
       </Layouts>
     </Fragment>

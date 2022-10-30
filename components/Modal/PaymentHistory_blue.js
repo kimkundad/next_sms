@@ -41,7 +41,6 @@ export default function PaymentHistory_blue(props) {
     <>
     <Box
         maxW="sm"
-        w="280px"
         borderWidth="1px"
         borderRadius="xl"
         overflow="hidden"

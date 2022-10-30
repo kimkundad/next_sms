@@ -6,6 +6,11 @@ import Link from "next/link";
 import { Flex, Center, Grid, Box, Text, Image } from "@chakra-ui/react";
 
 export default function Manual() {
+  const [youtubeInfo, setyoutubeInfo] = useState('https://www.youtube.com/embed/mC7aTvb9EhE')
+  const onChangeYoutube = (e) =>{
+    console.log('--888---', e.currentTarget.dataset.value)
+    setyoutubeInfo(e.currentTarget.dataset.value)
+  }
   return (
     <Fragment>
       <Head>
@@ -35,54 +40,42 @@ export default function Manual() {
                 <Text fontSize='3xl' as='b' color='#000'>คู่มือการใช้งาน SMS</Text>
                 <Flex  pl='10px' pt='10px'>
                 <Image cl src="/image/icon_3/manual-book.png" boxSize="30px" />
-                <Link href='#' >
-                <a>
+                <a data-value="https://www.youtube.com/embed/eD4ICC_XTk0" onClick={onChangeYoutube}>
                  <Text fontSize='2xl' as='b' pl='10px' color='#000'> วิธีการใช้งาน SMS</Text>
                 </a>
-                </Link>
                 </Flex >
                 <Flex  pl='10px' pt='10px'>
                 <Image cl src="/image/icon_3/completed-task.png" boxSize="30px" />
-                <Link href='#' >
-                <a>
+                <a data-value="https://www.youtube.com/embed/rxM5rrsAWIo" onClick={onChangeYoutube}>
                  <Text fontSize='2xl' as='b' pl='10px' color='#000'> วิธีการจัดการรายชื่อ SMS</Text>
                 </a>
-                </Link>
                 </Flex >
                 <Flex  pl='10px' pt='10px'>
                 <Image cl src="/image/icon_3/browser.png" boxSize="30px" />
-                <Link href='#' >
-                <a>
+                <a data-value="https://www.youtube.com/embed/eD4ICC_XTk0" onClick={onChangeYoutube}>
                  <Text fontSize='2xl' as='b' pl='10px' color='#000'> วิธีการจัดการเทมเพลตข้อความ</Text>
                 </a>
-                </Link>
                 </Flex >
                 <Box h='20px'></Box>
                 <Text fontSize='3xl' as='b' color='#000'>คู่มือการใช้งาน OTP</Text>
                 <Flex  pl='10px' pt='10px'>
                 <Image cl src="/image/icon_3/manual-book.png" boxSize="30px" />
-                <Link href='#' >
-                <a>
+                <a data-value="https://www.youtube.com/embed/rxM5rrsAWIo" onClick={onChangeYoutube}>
                  <Text fontSize='2xl' as='b' pl='10px' color='#000'> วิธีการใช้งาน OTP</Text>
                 </a>
-                </Link>
                 </Flex >
                 <Box h='20px'></Box>
                 <Flex  pl='10px' pt='10px'>
                 <Image cl src="/image/icon_3/credit.png" boxSize="30px" />
-                <Link href='#' >
-                <a>
+                <a data-value="https://www.youtube.com/embed/eD4ICC_XTk0" onClick={onChangeYoutube}>
                  <Text fontSize='2xl' as='b' pl='10px' color='#000'> วิธีการเติมเครดิต</Text>
                 </a>
-                </Link>
                 </Flex >
                 <Flex  pl='10px' pt='10px'>
                 <Image cl src="/image/icon_3/group.png" boxSize="30px" />
-                <Link href='#' >
-                <a>
+                <a data-value="https://www.youtube.com/embed/rxM5rrsAWIo" onClick={onChangeYoutube}>
                  <Text fontSize='2xl' as='b' pl='10px' color='#000'> วิธีการเพิ่มชื่อผู้ส่ง</Text>
                 </a>
-                </Link>
                 </Flex >
               </Box>
               <Box
@@ -90,7 +83,7 @@ export default function Manual() {
                 p="4"
                 borderRadius="xl"
                 overflow="hidden"
-              ><iframe width="560" height="315" src="https://www.youtube.com/embed/mC7aTvb9EhE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></Box>
+              ><iframe width="560" height="315" src={youtubeInfo} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></Box>
             </Grid>
           </Flex>
         </div>

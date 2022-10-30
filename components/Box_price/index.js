@@ -6,10 +6,10 @@ export default function Box_price(props) {
   return (
     <>
       <Box
+        alignItems='center'
         className="items"
         maxW="sm"
         boxShadow="md"
-        w="280px"
         borderWidth="1px"
         borderRadius="xl"
         overflow="hidden"

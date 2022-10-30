@@ -27,10 +27,8 @@ export default function Setting() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layouts>
-        <div className="page-hero page-container " id="page-hero">
-          <div className="padding text-center"></div>
-        </div>
         <div className="page-content page-container">
+        <div className='padding'>
           <Box className="row">
             <Box className="col-md-4">
               <Box borderWidth="1px" p="4" boxShadow="md" borderRadius="xl">
@@ -117,6 +115,7 @@ export default function Setting() {
                 </UnorderedList>
             </Box>
           </Box>
+        </div>
         </div>
       </Layouts>
     </Fragment>

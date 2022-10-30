@@ -291,6 +291,12 @@ td{
   margin-right: auto; 
   padding: 5px;
 }
+.page-sidenav_xx{
+   width: 100%!important;
+}
+.menu_right_profile{
+    margin-top: 50px !important;
+}
 .set_rad{
     border-radius: 15px;
 }

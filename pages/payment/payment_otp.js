@@ -36,22 +36,38 @@ export default function Payment() {
           </div>
         </div>
         <div className="page-content page-container">
-          <Card>
-            <Flex justifyContent="center" gap="4">
-              <Credit_box title="เครดิตคงเหลือ" credit="1282" url="" />
+        <div className='padding'>
+        <Card>
+            <div className="row justify-content-center" >
+            <div className="col-md-4">
+            <Credit_box title="เครดิตคงเหลือ" credit="1282" url="" />
+            </div>
+            <div className="col-md-4">
               <Credit_box title="แพ็คเกต" credit="BASIC" url="" />
+              </div>
+              <div className="col-md-4">
               <PaymentHistory_blue/>
-            </Flex>
+              </div>
+            </div>
             <Box height="5" />
             <hr></hr>
             <Box height="5" />
-            <Flex justifyContent="center" gap="4">
+            <div className="row justify-content-center" >
+              <div className="col-md-3 ">
               <Box_price title="แพ็คเกจ A" type="product" price="1,500" />
+              </div>
+              <div className="col-md-3">
               <Box_price title="แพ็คเกจ B" type="product" price="5,000"/>
+              </div>
+              <div className="col-md-3">
               <Box_price title="แพ็คเกจ C" type="recommended" price="15,000"/>
+              </div>
+              <div className="col-md-3">
               <Box_price title="แพ็คเกจ D" type="product" price="50,000"/>
-            </Flex>
+              </div>
+            </div>
           </Card>
+        </div>
         </div>
       </Layouts>
     </Fragment>

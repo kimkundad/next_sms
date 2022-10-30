@@ -37,6 +37,12 @@ const dashboardRoutes2 = [
         icon: 'settings 2.png',
         layout: "/setting",
       },
+      {
+        path: "/",
+        name: "ออกจากระบบ",
+        icon: 'log-out.png',
+        layout: "/logout",
+      },
     
   ];
   

@@ -14,10 +14,8 @@ export default function Contact_us() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layouts>
-        <div className="page-hero page-container " id="page-hero">
-          <div className="padding text-center"></div>
-        </div>
         <div className="page-content page-container">
+        <div className='padding'>
           <Flex direction="column" gap="4" p="4">
             <Grid templateColumns="repeat(2, 1fr)" gap={6}>
               <Box>
@@ -93,6 +91,7 @@ export default function Contact_us() {
               </Box>
             </Grid>
           </Flex>
+        </div>
         </div>
       </Layouts>
     </Fragment>

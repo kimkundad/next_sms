@@ -2,7 +2,7 @@ import React, { Fragment, useEffect, useState } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import Layouts from '@components/layouts/index'
+import Logo from '@components/Logo'
 import {
     Box
   } from "@chakra-ui/react";
@@ -20,9 +20,7 @@ const Home = () => {
           <div className="flex">
             <div className="w-xl w-auto-sm mx-auto py-5 ">
                 <div className="p-4 d-flex flex-column h-100">
-                    <Box className="navbar-brand align-self-center">
-                        <img src="/image/Logo_Pumppang.png" className="img-fluid"/>
-                    </Box>
+                    <Logo/>
                 </div>
                 <div className="card m-3">
                     <div id="content-body">
@@ -40,7 +38,9 @@ const Home = () => {
                                     <label>Password</label>
                                     <input type="password" className="form-control" placeholder="Password"/>
                                     <div className="set_bot_login my-3 text-right">
-                                        <a href="forgot-password.html" className="text-muted">ลืมรหัสผ่าน?</a>
+                                        <Link href="/forgot_password">
+                                            <a className="text-muted">ลืมรหัสผ่าน?</a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="checkbox mb-3 ">

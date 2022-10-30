@@ -84,7 +84,6 @@ const Table = ({ data, rowsPerPage }) => {
           </div>
         </div>
       </div>
-
       <CardBlue>
         <div class="table-responsive">
           <table className="table table-striped">

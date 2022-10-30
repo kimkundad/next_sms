@@ -153,6 +153,13 @@ export default function editOtp(props) {
               </div>
               <div className="col-md-6 ">
               <Text fontSize='xl' className="text-center" mt={5}> ตัวอย่างข้อความ</Text>
+              <Box maxW="sm"
+                    className="position_text_example"
+        borderRadius="xl"
+        overflow="hidden"
+        bg="#e2f4fe">
+                    <Text fontSize='lg'> โปรโมชั่นพิเศษ 9.9 ลูกค้าเก่าลดทันที 40% คลิ๊ก https://xxxxxxxx.com</Text>
+                    </Box>
               <img  width="100%"
                       className="flu-id"
                       src="/image/icon_3/preview.png"

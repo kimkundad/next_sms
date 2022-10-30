@@ -101,6 +101,7 @@ import {
               </div>
             </div>
             <div className="page-content page-container">
+            <div className='padding'>
             <div className="row">
                     {content}
                     </div>
@@ -120,6 +121,7 @@ import {
                     onPageChange={pagginationHandler}
                 />
                 <Box h='20' />
+                </div>
                 </div>
             </Layouts>
         </Fragment>

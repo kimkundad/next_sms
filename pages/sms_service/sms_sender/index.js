@@ -1,12 +1,14 @@
 import React, { Fragment } from "react";
 import Head from "next/head";
-import Link from "next/Link";
 import Layouts from "@components/layouts/index";
 import Card from "@components/card";
 import CardBlue from "@components/cardBlue";
 import Btn_H_sms from "@components/btn_header_sms";
 import FileContact from '@components/Modal/FileContact';
 import { useRef } from "react";
+import {
+  Link
+} from "@chakra-ui/react";
 
 
 export default function Sms_sender() {
@@ -25,10 +27,8 @@ export default function Sms_sender() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layouts>
-        <div className="page-hero page-container " id="page-hero">
-          <div className="padding text-center"></div>
-        </div>
         <div className="page-content page-container">
+        <div className='padding'>
           <Btn_H_sms></Btn_H_sms>
           <br />
           <Card>
@@ -122,6 +122,7 @@ export default function Sms_sender() {
               </div>
             </CardBlue>
           </Card>
+        </div>
         </div>
       </Layouts>
     </Fragment>

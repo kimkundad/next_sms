@@ -67,6 +67,7 @@ export default function Package() {
           <div className="padding text-center"></div>
         </div>
         <div className="page-content page-container">
+        <div className='padding'>
           <Card>
             <Flex>
               <Box>
@@ -304,6 +305,7 @@ export default function Package() {
               </Box>
             </Box>
           </Card>
+        </div>
         </div>
       </Layouts>
     </Fragment>
