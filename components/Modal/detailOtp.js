@@ -29,7 +29,6 @@ import {
   InputRightElement ,
   Image 
 } from "@chakra-ui/react";
-import "@node_modules/flickity/css/flickity.css";
 import Card from "@components/card";
 import CardBlue2 from "@components/cardBlue2";
 import Table from "@components/table_otp_detail";

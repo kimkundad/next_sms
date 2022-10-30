@@ -8,7 +8,6 @@ import {
   InputGroup,
   InputRightElement,
 } from "@chakra-ui/react";
-import "@node_modules/flickity/css/flickity.css";
 
 export default function cardBlue(props) {
   return (

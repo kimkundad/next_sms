@@ -29,7 +29,6 @@ import {
   InputRightElement,
   Image 
 } from "@chakra-ui/react";
-import "@node_modules/flickity/css/flickity.css";
 
 export default function ConfirmSender(props) {
   const { isOpen, onOpen, onClose } = useDisclosure();

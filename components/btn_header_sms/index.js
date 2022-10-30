@@ -1,5 +1,4 @@
 import React from "react";
-import "@node_modules/flickity/css/flickity.css";
 import Btn_sms from "@components/btm_sms";
 
 export default function Btn_header_sms({ children }) {

@@ -1,5 +1,4 @@
 import React from 'react'
-import '@node_modules/flickity/css/flickity.css'
 
 export default function Card({ children }) {
 

@@ -30,7 +30,6 @@ import {
   CopyIcon,
   InputRightElement,
 } from "@chakra-ui/react";
-import "@node_modules/flickity/css/flickity.css";
 import CardBlue from "@components/cardBlue";
 import { useRef } from "react";
 

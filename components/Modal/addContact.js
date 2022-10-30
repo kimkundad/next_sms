@@ -29,7 +29,6 @@ import {
   Radio,
   Checkbox, CheckboxGroup, Link, Image 
 } from "@chakra-ui/react";
-import "@node_modules/flickity/css/flickity.css";
 import Dropzone from "react-dropzone";
 
 

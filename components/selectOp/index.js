@@ -1,5 +1,4 @@
 import React from 'react'
-import '@node_modules/flickity/css/flickity.css'
 import Select from "react-select";
 
 export default function SelectOp(props) {

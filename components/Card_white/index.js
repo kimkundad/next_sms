@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "@node_modules/flickity/css/flickity.css";
 import {
   Flex,
   Image,

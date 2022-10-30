@@ -18,7 +18,6 @@ import {
   Textarea ,
   Image
 } from "@chakra-ui/react";
-import "@node_modules/flickity/css/flickity.css";
 
 export default function Save_template(props) {
   const { isOpen, onOpen, onClose } = useDisclosure();
