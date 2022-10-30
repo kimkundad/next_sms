@@ -40,7 +40,7 @@ const dashboardRoutes = [
   {
     path: "/payment_sms",
     name: "เติมเครดิต",
-    icon: '/credit.png',
+    icon: 'credit.png',
     layout: "/payment",
   },
   {
