@@ -8,7 +8,7 @@ import SelectOp from "@components/selectOp";
 import Btn_sender from "@components/btn_sender";
 import Link from "next/link";
 import Btn_icon_b from "@components/Btn_icon_b";
-import Credit_box_setting from "@components/credit_box_setting";
+import Credit_box_setting from "@components/Credit_box_setting";
 import EditProfile from '@components/Modal/editProfile';
 import PaymentHistory from '@components/Modal/payment_history';
 import { Flex, Center, Grid, Box, Text, Image, List,

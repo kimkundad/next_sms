@@ -2,7 +2,7 @@ import React, { Fragment, useEffect, useState } from "react";
 import Link from "next/link";
 import { Box, Center } from "@chakra-ui/react";
 
-export default function Credit_box_setting(props) {
+export default function Credit_box_settings(props) {
   return (
     <>
       <Box
