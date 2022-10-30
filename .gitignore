@@ -8,6 +8,9 @@
 # testing
 /coverage
 
+# static folder for DigitalOcean App Platform
+_static
+
 # next.js
 /.next/
 /out/
