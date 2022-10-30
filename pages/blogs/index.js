@@ -130,7 +130,7 @@ import {
 
 
 
-    export async function getStaticProps({ query }) {
+    export async function getStaticProps( query ) {
         const page = query.page || 1; //if page empty we request the first page
         const posts = await axios.get(`https://gorest.co.in/public-api/posts?_format=json&access-token=cxzNs8fYiyxlk708IHfveKM1z1xxYZw99fYE&page=${page}`);
 
