@@ -110,6 +110,7 @@ const Table = ({ data, rowsPerPage }) => {
                       icon="/image/icon_2/loading.png" 
                       text="รอดำเนินการ"
                       url="#"
+                      type="pending"
                       />
                     ) : el.status == "success" ? (
                       <Btn_icon 

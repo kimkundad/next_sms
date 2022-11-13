@@ -6,7 +6,7 @@ export default function Btn_icon(props) {
   return (
     <>
       <Link href={props.url}>
-        <a className="btn_radius min-w-btn2 btn btn-white btn-sm mr5"  >
+        <a className={ props.type == 'pending' ? 'min-w-btn2 btn_radius btn btn-white btn-sm mr5' : 'btn_radius btn btn-white btn-sm mr5' }  >
           <Image className="w-20 mar-ri-10 " src={props.icon} />
           <b>{props.text}</b>
         </a>
@@ -14,3 +14,5 @@ export default function Btn_icon(props) {
     </>
   );
 }
+
+

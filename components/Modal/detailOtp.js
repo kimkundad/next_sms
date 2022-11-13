@@ -41,7 +41,7 @@ export default function DetailOtp(props) {
     <>
     <a
         onClick={onOpen}
-        className="btn_icon_sig btn_radius min-w-btn2 btn btn-white btn-sm mr5"
+        className="btn_icon_sig btn_radius btn btn-white btn-sm mr5"
       >
         <Image className="w-20" src="/image/icon_3/report.png" />
       </a>

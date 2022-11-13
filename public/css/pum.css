@@ -787,6 +787,9 @@ tbody::before
     }
     
 }
+.min-w-btn2{
+    min-width: 148px; 
+}
 
 /* background: #ffd855; */
 @media screen and (max-width: 775px) {
@@ -808,6 +811,6 @@ tbody::before
         min-width: 125px;
     }
     .min-w-btn2{
-        min-width: 148px;
+        min-width: 148px; 
     }
   }

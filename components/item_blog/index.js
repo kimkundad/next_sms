@@ -5,7 +5,7 @@ import { Image } from '@chakra-ui/react'
 
 export default function Item_blog(props) {
   return (
-    <div className="col-6 col-sm-3">
+    <div className="col-6 col-md-3">
       <div className="card card_pung text-center">
         <div className="card-header">
           <Image className="img-fluid" src={"image/" + props.image} />
