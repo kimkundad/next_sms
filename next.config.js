@@ -1,7 +1,8 @@
 // next.config.js
 const withCSS = require('@zeit/next-css')
 module.exports = withCSS({
-  cssModules: true
+  cssModules: true,
+  trailingSlash: true
 })
 
 /** @type {import('next').NextConfig} */
